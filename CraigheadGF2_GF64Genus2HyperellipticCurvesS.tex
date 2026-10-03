@@ -64,19 +64,27 @@ The benefit of using the computer to explicitly map this space is that we obtain
 Ultimately, this database does not dictate exactly which curve a security engineer should use. However, by revealing the underlying geometric risk drivers, it provides the empirical insight and comfort necessary to make reasoned architectural decisions when deploying characteristic 2 cryptography.
 
 \section{Background: The Hasse-Weil Grid and Frobenius Invariants}
-The foundation of the state space is the characteristic polynomial of the Frobenius endomorphism. For a genus 2 curve over a finite field $\mathbb{F}_q$ (where $q = 2^k$), this polynomial takes the form:
+In any robust quantitative model, we must first isolate the primary drivers. For a genus 2 curve over a finite field $\mathbb{F}_q$ (where $q = 2^k$), the foundation of the state space is governed by the characteristic polynomial of the Frobenius endomorphism. 
+
+\begin{definition}[Frobenius Endomorphism \cite{Silverman2009}]
+Over a finite field $\mathbb{F}_q$, the Frobenius endomorphism is a mathematical mapping that takes a coordinate and raises it to the $q$-th power: $(x, y) \mapsto (x^q, y^q)$. Operationally, it acts as a geometric filter: by Fermat's Little Theorem, the points that do not move under this mapping (the fixed points) are exactly the rational points that physically exist on the curve within that specific finite field.
+\end{definition}
+
+This mapping acts as the mechanical engine of the model. Its characteristic polynomial takes the form:
 \[ P(T) = T^4 + a_1 T^3 + a_2 T^2 + q a_1 T + q^2 \]
+
+To bound this system and prevent it from expanding infinitely, we rely on established theoretical limits:
 
 \begin{theorem}[Hasse-Weil Theorem for Curves]
 For a smooth projective curve $C$ of genus $g$ over $\mathbb{F}_q$, the characteristic polynomial of the Frobenius endomorphism $P(T) = \prod_{i=1}^{2g} (T - \alpha_i)$ has roots $\alpha_i$ that are algebraic integers with an absolute value of exactly $|\alpha_i| = \sqrt{q}$.
 \end{theorem}
 
-Consequently, the integer coefficients $a_1$ and $a_2$ (the Frobenius invariants) are strictly bounded. They act as the primary drivers of the geometric model, dictating the exact number of rational points on the curve and its Jacobian. To understand the operational impact of these drivers, we must define their structural roles:
+Consequently, the integer coefficients $a_1$ and $a_2$ (the Frobenius invariants) are strictly bounded. In operational terms, they act as the primary structural drivers of the geometric model, dictating the exact capacity of rational points on both the curve and its Jacobian. To understand how these drivers influence the macroscopic system, we must clearly define their specific roles:
 
 \begin{enumerate}
-\item \textbf{The $a_1$ Invariant (Trace of Frobenius):} Determines the number of rational points on the curve over the base field: $\#C(\mathbb{F}_q) = q + 1 - a_1$.
-\item \textbf{The $a_2$ Invariant:} Determines the number of points over the quadratic extension field $\mathbb{F}_{q^2}$: $\#C(\mathbb{F}_{q^2}) = q^2 + 1 - a_1^2 + 2a_2$.
-\item \textbf{The Geometric Group Order ($N$):} Represents the holistic number of rational points on the Jacobian. By evaluating the Frobenius polynomial at $T=1$, we extract the exact group order from the invariants: $N = P(1) = q^2 + 1 - a_1(q + 1) + a_2$. By maximizing and minimizing the roots, we establish the absolute theoretical limits for the Jacobian's cardinality: $N_{\text{min}} = (q + 1 - 2\sqrt{q})^2$ and $N_{\text{max}} = (q + 1 + 2\sqrt{q})^2$.
+\item \textbf{The $a_1$ Invariant (Trace of Frobenius):} This is the baseline driver. It determines the number of rational points on the curve over the base field: $\#C(\mathbb{F}_q) = q + 1 - a_1$.
+\item \textbf{The $a_2$ Invariant (Quadratic Extension):} This acts as the secondary driver, determining the number of points over the quadratic extension field $\mathbb{F}_{q^2}$: $\#C(\mathbb{F}_{q^2}) = q^2 + 1 - a_1^2 + 2a_2$.
+\item \textbf{The Geometric Group Order ($N$):} This represents the holistic, macroscopic volume of the Jacobian. By evaluating the Frobenius polynomial at $T=1$, we extract the exact group order directly from the underlying invariants: $N = P(1) = q^2 + 1 - a_1(q + 1) + a_2$. By maximizing and minimizing the algebraic roots, we establish the absolute theoretical limits for the system's overall cardinality: $N_{\text{min}} = (q + 1 - 2\sqrt{q})^2$ and $N_{\text{max}} = (q + 1 + 2\sqrt{q})^2$.
 \end{enumerate}
 
 \subsection{Algebraic Extraction of the Hasse-Weil Lattice Bounds}
@@ -92,11 +100,19 @@ These limits define an exact integer grid. The practitioner's objective is to de
 \section{Literature Review and Topological Exclusions}
 The classification of abelian varieties over finite fields relies on theorems mapping isogeny classes to algebraic integers. By the Honda-Tate Theorem \cite{Honda1968, Tate1966}, two abelian varieties are isogenous if and only if their Frobenius endomorphisms share the same characteristic polynomial. While the Honda-Tate framework establishes the boundaries of the isogeny class, it does not specify the explicit group topology of the curve, nor does it guarantee operational existence.
 
-\begin{theorem}[Newton Polygon Constraints, Waterhouse \cite{Waterhouse1969}]
-For a valid Weil polynomial to correspond to an abelian variety, its $p$-adic Newton polygon must lie on or above the Hodge polygon.
+\begin{definition}[Newton and Hodge Polygons \cite{Katz1979, Waterhouse1969}]
+In algebraic geometry, polygons are used to graph the internal structure of a curve. 
+\begin{itemize}
+    \item \textbf{The Hodge Polygon:} Represents the absolute, ideal theoretical blueprint of the curve based on its geometry (cohomology).
+    \item \textbf{The Newton Polygon:} Represents the actual, operational $p$-adic behavior of the Frobenius roots in a specific finite field environment.
+\end{itemize}
+\end{definition}
+
+\begin{theorem}[Polygon Constraints, Waterhouse \cite{Waterhouse1969}]
+For a valid Weil polynomial to correspond to an actual abelian variety, its $p$-adic Newton polygon must lie strictly on or above the Hodge polygon.
 \end{theorem}
 
-The requirement that the Newton polygon rests on or above the Hodge polygon mathematically excludes specific combinations from the grid. In fields where $k$ is an odd extension (e.g., $\mathbb{F}_8$), Waterhouse's constraint dictates that if $a_1 = 0$, $a_2$ cannot be an odd integer. These anomalous structures are systematically discarded.
+Operationally, this requirement means the actual behavior of the curve cannot mathematically undercut its theoretical blueprint. In fields where $k$ is an odd extension (e.g., $\mathbb{F}_8$), this constraint dictates that if $a_1 = 0$, $a_2$ cannot be an odd integer. These combinations represent unstable architectures and are systematically discarded from the grid.
 
 However, a valid Weil polynomial only guarantees the existence of an \textit{abelian surface}, not necessarily the Jacobian of a curve. Howe, Nart, and Ritzenthaler formalized the constraints mapping these exclusions, specifically targeting decomposable surfaces and Serre's point-counting defects \cite{Howe2009}. 
 
@@ -122,10 +138,15 @@ To ensure interoperability with the L-functions and Modular Forms Database (LMFD
 
 \subsection{The Base Field Definitions (\texttt{fields})}
 Extension fields $\mathbb{F}_{2^k}$ are uniquely defined by their irreducible modulus polynomial. To ensure rigorous reproducibility of the finite field arithmetic, the exact polynomials utilized by NTL to construct each field are formally cataloged.
+
+\begin{definition}[Conway Polynomial \cite{Lidl1997, Parker1990}]
+A Conway polynomial is a standardized, lexicographically-first primitive polynomial used to construct finite fields. Because there are many valid ways to build $\mathbb{F}_{64}$, different software systems (e.g., SageMath, Magma, NTL) might use different irreducible polynomials. Conway polynomials act as a universal ``Rosetta Stone,'' ensuring that elements generated in our C++ sieve directly translate to the exact same algebraic values when read by Python or other computational architectures.
+\end{definition}
+
 \begin{itemize}
 \item \texttt{q}: Cardinality of the finite field ($2^k$).
 \item \texttt{k}: Extension degree over the prime field.
-\item \texttt{irreducible\_poly}: The Conway polynomial constraint. For the prime base field $\mathbb{F}_2$, this is mathematically designated as "N/A (Prime Field)" as it requires no extension polynomial.
+\item \texttt{irreducible\_poly}: The Conway polynomial constraint (e.g., $x^6 + x^4 + x^3 + x + 1$ for $\mathbb{F}_{64}$). For the prime base field $\mathbb{F}_2$, this is mathematically designated as "N/A (Prime Field)" as it is the foundational layer and requires no extension polynomial.
 \end{itemize}
 
 \subsection{Isogeny Classes (\texttt{curves})}
@@ -139,9 +160,25 @@ By the Honda-Tate Theorem \cite{Honda1968}, abelian varieties sharing the same F
 
 \subsection{Geometric Isomorphism Classes (\texttt{explicit\_curves})}
 This table catalogs the exact geometric structures mapped across the characteristic 2 affine space. To encode elements of the extension field natively, a zero-indexed Zech logarithm convention is utilized.
+
+\begin{definition}[Zech Logarithm \cite{Huber1990}]
+Instead of storing complex polynomials as heavy text strings, elements of a finite field can be expressed as powers of a primitive generator root, $z$. A Zech logarithm represents addition via exponents, defined by the relationship $1 + z^a = z^{Z(a)}$. 
+\end{definition}
+
 \begin{itemize}
 \item \texttt{curve\_id}: Foreign key grouping geometric classes into their overarching isogeny class.
-\item \texttt{h\_poly\_coeffs}, \texttt{f\_poly\_coeffs}: Integer arrays representing the exponent of the field's primitive root $z$. The algebraic zero element $0$ is strictly encoded as \texttt{-1}. The algebraic unity $1 = z^0$ is encoded as \texttt{0}. This exact integer-array representation prevents floating-point coercion faults and allows for instantaneous ingestion in machine learning applications.
+\item \textbf{\texttt{h\_poly\_coeffs}, \texttt{f\_poly\_coeffs}:} Integer arrays representing the Zech logarithmic exponents of the curve's polynomials. 
+
+\textbf{Operational Justification:} Storing coefficients as raw algebraic strings (e.g., "$z^5 + z^2 + 1$") forces the database to perform expensive string-parsing during mathematical queries, which severely bottlenecks ingestion speeds. By utilizing Zech logarithms, we compress the algebraic complexity. Every element $c \in \mathbb{F}_{2^k}$ is either the algebraic zero ($0$) or a power of the primitive root ($z^p$). We map these strictly to integers: $0 \mapsto -1$ (since $\log(0)$ is mathematically undefined), and $z^p \mapsto p$. Note that algebraic unity $1 = z^0 \mapsto 0$. This exact integer-array representation prevents floating-point coercion faults and allows for instantaneous, highly scalable ingestion in predictive Machine Learning (ML) applications.
+
+\textbf{Explicit Example ($\mathbb{F}_{8}$):} Let the finite field be generated by a primitive root $z$. Consider a curve where the polynomial is $f(x) = z^4 x^2 + x + z^6$. To map this to the database, we extract the Zech exponent of each coefficient in ascending order of $x$:
+\begin{itemize}
+    \item The constant term ($x^0$) is $z^6 \mapsto \textbf{6}$.
+    \item The $x^1$ term is $1$ (which equates to $z^0$) $\mapsto \textbf{0}$.
+    \item The $x^2$ term is $z^4 \mapsto \textbf{4}$.
+\end{itemize}
+In the SQLite database, this complex finite field polynomial is strictly encoded as the lightweight integer array \texttt{[6, 0, 4]}. Furthermore, if the involution polynomial is $h(x) = x^2 + 1$, the missing $x^1$ term represents the algebraic zero, yielding the array \texttt{[0, -1, 0]}.
+
 \item \texttt{h\_poly\_str}, \texttt{f\_poly\_str}: Human-readable algebraic string denormalizations of the Zech arrays for rapid SQL text-filtering.
 \item \texttt{geometric\_order}: The confirmed rational point count of the Jacobian.
 \item \texttt{p\_rank}: The Hasse-Witt invariant. In characteristic 2, this is derived directly from the degree of the involution polynomial, $p\text{-rank} = \deg(h(x))$ \cite{Scholten2002, Manin1963}. A $p$-rank of 0 designates a supersingular curve.
@@ -169,12 +206,34 @@ $\mathbb{F}_{64}$ & 6 & 5,521 & 1,538 \\
 \label{tab:isogeny_classes}
 \end{table}
 
-By the Honda-Tate theorem, hyperelliptic curves sharing the same Weil polynomial are isogenous, but not necessarily isomorphic. To properly stratify the coarse moduli space $\mathcal{M}_2$ \cite{Zobernig2021} and map the hardware topology of these curves, one must transition from isogeny classes to strict geometric isomorphism classes.
+By the Honda-Tate theorem, hyperelliptic curves sharing the same Weil polynomial are isogenous, but not necessarily isomorphic. To properly stratify the system and map the hardware topology of these curves, one must transition from theoretical isogeny classes to strict geometric isomorphism classes, which reside in the coarse moduli space, $\mathcal{M}_2$.
+
+\begin{definition}[The Coarse Moduli Space $\mathcal{M}_2$ \cite{Igusa1960, Zobernig2021}]
+The moduli space $\mathcal{M}_2$ is the universal mathematical ``blueprint'' that catalogs every possible genus 2 curve. If an algebraic equation is a photograph of a curve, $\mathcal{M}_2$ is the actual physical object. Two wildly different algebraic equations might simply be distorted reflections of the exact same geometric curve. The moduli space deduplicates these reflections, classifying curves strictly by their inherent geometric structure (isomorphism classes) rather than their raw equations.
+
+\textbf{Operational Example:} Over standard fields, mathematicians navigate $\mathcal{M}_2$ using \textit{Igusa invariants}---a set of mathematical coordinates that perfectly identify a curve's location in the space. However, calculating classical Igusa invariants requires dividing by 2. In our characteristic 2 environments, dividing by 2 triggers a fatal mathematical error. Therefore, we must use an entirely different coordinate system to map $\mathcal{M}_2$.
+\end{definition}
 
 \subsection{Affine Space Search and Geometric Cross-Verification}
-To compute the complete spectrum of exact geometric isomorphism classes over $\mathbb{F}_{2^k}$, a rigorously defined geometric search space was constructed following the exact affine reduction of Cardona, Quer, Nart, and Pujolà \cite{Cardona2005}. Any genus 2 curve over characteristic 2 can be written in simplified Weierstrass form $y^2 + h(x)y = f(x)$. 
+To safely map the moduli space $\mathcal{M}_2$ in characteristic 2 without triggering division-by-zero errors, we utilize a mathematically hardened coordinate system.
 
-The canonical forms for $h(x)$ are strictly partitioned based on the curve's 2-rank. For a finite field $\mathbb{F}_q$, summing these classes establishes the absolute theoretical search space bounds for geometric isomorphism classes: $|S_q| = 5q^3$. A curve is singular if the discriminant polynomial shares a root, filtered computationally via $\gcd(h, (h')^2f + (f')^2) > 1$. Table \ref{tab:geometric_space} demonstrates the mathematical reconciliation of this affine sieve across the final 1,465,896 valid records.
+\begin{theorem}[Exact Affine Reduction, Cardona et al. \cite{Cardona2005}]
+Cardona, Quer, Nart, and Pujolà proved that every genus 2 curve in characteristic 2 can be mathematically reduced to a strict, minimal canonical form: $y^2 + h(x)y = f(x)$. They categorized the entire space into exactly four architectures based entirely on the curve's $p$-rank (determined by the degree of the $h(x)$ polynomial):
+\begin{itemize}
+    \item \textbf{Ordinary (Rank 2):} $h_1(x) = x^2 + x$ (yielding $q^3$ combinations) and $h_2(x) = x^2$ (yielding $q^3$ combinations).
+    \item \textbf{Almost-Ordinary (Rank 1):} $h_3(x) = x$ (yielding $2q^3$ combinations).
+    \item \textbf{Supersingular (Rank 0):} $h_4(x) = 1$ (yielding $q^3$ combinations).
+\end{itemize}
+\end{theorem}
+
+\textbf{Mathematical Proof of the 20\% Supersingular Asymptote:}
+By summing the valid CQNP classes, we establish the absolute theoretical search space volume for geometric isomorphism classes: $|S_q| = q^3 + q^3 + 2q^3 + q^3 = 5q^3$. 
+Because the $p$-rank is strictly determined by the degree of $h(x)$, supersingular curves exist only when $\deg(h) = 0$ (i.e., $h_4(x)=1$). 
+The theoretical density of supersingular curves in characteristic 2 is exactly the ratio of supersingular combinations to the total search space:
+\[ \frac{q^3}{5q^3} = \frac{1}{5} = 20\% \]
+Therefore, the empirical observation that exactly 20\% of all valid Jacobians across our databases collapse into rank-0 is not a statistical coincidence, but a structural mathematical certainty inherent to the affine parameter space.
+
+A curve is singular if the discriminant polynomial shares a root, filtered computationally via $\gcd(h, (h')^2f + (f')^2) > 1$. Table \ref{tab:geometric_space} demonstrates the mathematical reconciliation of this affine sieve across the final 1,465,896 valid records.
 
 \begin{table}[h]
 \centering
@@ -220,11 +279,17 @@ $\mathbb{F}_{64}$ & 64 & 6561 & \textbf{6561} & 192 & $(\mathbb{Z}/9\mathbb{Z})^
 \end{table}
 
 \subsection{Structural Observations of the Maximal Spectrum}
-The computation of the SNF invariants reveals strict directional properties governing the curve's topology:
+The computation of the SNF invariants reveals strict directional rules governing the curve's internal topology. When we push these systems to their absolute maximum size, we observe three distinct behaviors:
+
 \begin{enumerate}
-\item \textbf{Tightness and Symmetric Supersingularity ($\mathbb{F}_{16}, \mathbb{F}_{64}$):} For the larger even-power subfields, the maximal curves perfectly saturate the rational Hasse-Weil ceiling. Because this ceiling is odd, the $p$-rank is strictly 0, placing them in the supersingular spectrum \cite{Scholten2002}. The absence of the $p$-rank obstruction allows the $\ell$-torsion subgroups to fragment completely into a symmetric rank-4 structure (e.g., $(\mathbb{Z}/9\mathbb{Z})^4$ for $q=64$).
-\item \textbf{The Small-Field Shortfall ($\mathbb{F}_2, \mathbb{F}_4$):} While $\mathbb{F}_4$ possesses a rational Hasse-Weil bound of 81, the empirical data proves that no curve achieves this limit. The maximum is strictly bounded at 49 ($7^2$), yielding a symmetric rank-2 subgroup. 
-\item \textbf{Irrational Field Asymmetries ($\mathbb{F}_8, \mathbb{F}_{32}$):} For fields where $k$ is odd, the maximal group structures lose their rank-4 symmetry. For $\mathbb{F}_{32}$, the maximal curves exhibit a strict rank-2 Sylow-2 subgroup ($\mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z}$), demonstrating full 2-rank ($p$-rank $= g$), indicating that these specific maximal curves are ordinary.
+\item \textbf{Tightness and Symmetric Supersingularity ($\mathbb{F}_{16}, \mathbb{F}_{64}$):} 
+For fields built on even powers of 2 (like $\mathbb{F}_{16}$ and $\mathbb{F}_{64}$), the Hasse-Weil theoretical limit happens to be an exact, odd integer. When our computer search found the largest possible curves in these fields, they hit this odd ceiling perfectly. Why does this matter? Binary curves have strict mathematical rules governing even numbers (measured by the $p$-rank). By maxing out at an odd number, the curve's binary mechanics completely shut off (a $p$-rank of 0), shifting the curve into a special state called \textit{supersingularity} \cite{Scholten2002}. Without the binary constraints locking its internal structure together, the geometry of the curve shatters into four perfectly equal, symmetric pieces. For example, in $\mathbb{F}_{64}$, the maximum size is 6561, which splits flawlessly into four equal parts: $(\mathbb{Z}/9\mathbb{Z})^4$.
+
+\item \textbf{The Small-Field Shortfall ($\mathbb{F}_2, \mathbb{F}_4$):} 
+In theory, the mathematical models predict that a curve over $\mathbb{F}_4$ could hold up to 81 rational points. However, our explicit data proves this is a phantom limit---no curve actually achieves it. When the digital environment is this small, the geometric shape of the curve physically runs out of room before hitting the mathematical ceiling. The data shows it caps out at exactly 49 points ($7^2$). Because 49 is a perfect square, it splits symmetrically into a two-part structure ($\mathbb{Z}/7\mathbb{Z} \times \mathbb{Z}/7\mathbb{Z}$), rather than the four-part structure seen in larger fields.
+
+\item \textbf{Irrational Field Asymmetries ($\mathbb{F}_8, \mathbb{F}_{32}$):} 
+When the field is built on an odd power of 2 (like $2^3=8$ or $2^5=32$), the math gets bumpy. The mathematical ceiling is no longer a clean integer; it evaluates to an irrational decimal. Because the curves cannot cleanly hit a supersingular peak, they lose their beautiful four-part symmetry. Instead, the maximum curves in $\mathbb{F}_{32}$ lean heavily on their standard binary rules. They exhibit a ``full'' 2-rank, meaning they operate as standard, \textit{ordinary} curves. As a result, their internal structures become lopsided rather than perfectly symmetric, yielding a heavy, uneven topology ($\mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/451\mathbb{Z}$).
 \end{enumerate}
 
 \begin{figure}[htpb]
@@ -309,7 +374,11 @@ grid style={line width=.1pt, draw=gray!20}
 \end{figure}
 
 \subsection{Empirical Isogeny Splitting}
-Grouping the $\mathbb{F}_{64}$ dataset by geometric order reveals numerous isogeny classes that diverge into distinct topological structures despite sharing the exact same $L$-polynomial:
+\begin{definition}[Discrete Group Architecture \cite{Waterhouse1969}]
+While the Honda-Tate theorem guarantees that curves sharing an $L$-polynomial will have the exact same total number of points (geometric order), it does not guarantee how those points are organized. The \textit{discrete group architecture} (or explicit $\mathbb{Z}$-module topology) refers to the specific physical layout of the curve's generators, represented by its Smith Normal Form (e.g., whether a group of 64 points is organized as a single cyclic loop of $\mathbb{Z}/64\mathbb{Z}$ or fractured into a grid of $\mathbb{Z}/8\mathbb{Z} \times \mathbb{Z}/8\mathbb{Z}$). Waterhouse explicitly proved that a single isogeny class can split into multiple, distinct group architectures based on the curve's endomorphism ring.
+\end{definition}
+
+Grouping the $\mathbb{F}_{64}$ dataset by geometric order reveals numerous isogeny classes that diverge into distinct discrete group architectures despite sharing the exact same $L$-polynomial:
 \begin{itemize}
 \item \textbf{Geometric Order $\mathbf{N=4096}$:} Splits symmetrically between a purely cyclic topology $\mathbb{Z}/4096\mathbb{Z}$ and a non-cyclic rank-2 topology $\mathbb{Z}/64\mathbb{Z} \times \mathbb{Z}/64\mathbb{Z}$.
 \item \textbf{Geometric Order $\mathbf{N=3888}$:} Exhibits a three-way topological split: $\mathbb{Z}/3888\mathbb{Z}$, $\mathbb{Z}/1944\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z}$, and $\mathbb{Z}/648\mathbb{Z} \times \mathbb{Z}/6\mathbb{Z}$.
@@ -325,10 +394,21 @@ The verified datasets ($\mathbb{F}_2$ through $\mathbb{F}_{64}$) encapsulated in
 \begin{enumerate}
 \item \textbf{Predictive Modeling of Group Topologies:} Full arithmetic point-counting remains computationally expensive. Utilizing supervised machine learning, we propose training predictive models directly on the binary coefficients of $h(x)$ and $f(x)$ to predict the abelian rank without invoking any algebraic geometry algorithms. This would allow cryptographers to instantly filter candidate curves, dramatically reducing CPU overhead during curve generation.
 \item \textbf{Testing Cohen-Lenstra Heuristics in Characteristic 2:} The Cohen-Lenstra heuristics predict the statistical distribution of finite abelian groups. The foundational premise is that the probability of a specific group topology $G$ appearing is inversely proportional to the size of its automorphism group: $P(G) \propto |\text{Aut}(G)|^{-1}$. Consequently, purely cyclic groups (Rank 1) should heavily dominate the landscape. This theoretical expectation is empirically confirmed by the 74.19\% cyclicity rate mapped in the $\mathbb{F}_{64}$ dataset. Utilizing the explicit fiber counts generated here, an empirical goodness-of-fit study is proposed to determine precisely where structural $2$-torsion clamping forces a statistical deviation from continuous Cohen-Lenstra predictions.
-\item \textbf{The Algebra of Isogeny Splitting:} By the Honda-Tate theorem, curves sharing exact point counts across all finite extensions are isogenous. However, as the database reveals, sharing an isogeny class does not guarantee a shared hardware topology. The analytical objective is to reverse-engineer this topological split. By evaluating the discriminants of the Weil polynomials and the absolute field invariants from the explicitly mapped curves, we aim to isolate the precise algebraic risk drivers that force the torsion subgroup to fracture.
-\item \textbf{Post-Quantum Goppa Codes and Trapdoor Audits:} This database serves a dual purpose for modern cryptography. We propose analyzing the Rank-4 supersingular curves for maximum distance separable properties to be used in Algebraic Geometry (Goppa) error-correcting codes. Conversely, we propose sweeping the database to map how degenerate topologies manifest in the $h(x)$ polynomial, providing security engineers with an audit framework to detect weak "trapdoor" curves that mimic strong cryptographic profiles.
-\item \textbf{Gauss Genus Theory and Low-Discrepancy Sequences (LDS):} The explicit $\langle u(x), v(x) \rangle$ coordinate data cataloged in this database enables the systematic mapping of Arf invariants without relying on theoretical abstractions \cite{Zhang2026}. Furthermore, these explicit mappings enable the construction of deterministic Low-Discrepancy Sequences, such as $(t, m, s)$-nets utilized in Quasi-Monte Carlo (QMC) numerical integration. By extracting the explicit divisor structures of the verified supersingular Rank-4 curves, practitioners can construct optimal, dense generator matrices for QMC applications.
-\item \textbf{Advanced Cohomology and Hardware Scaling:} The current Cartier-Manin linear sieve approach faces memory constraints at extreme scales. To push the explicit database into larger fields, the computational sieve will transition to advanced $p$-adic point-counting frameworks, specifically utilizing rigid cohomology and lifting curve differentials over Witt vectors on localized computational hardware (e.g., SSD-backed Raspberry Pi clusters).
+\item \textbf{The Algebra of Isogeny Splitting:} By the Honda-Tate theorem, curves sharing exact point counts across all finite extensions are isogenous. However, as the database reveals, sharing an isogeny class does not guarantee a shared discrete group architecture. An isogeny is a surjective algebraic morphism with a finite kernel; quotienting by a kernel containing $\ell$-torsion points fractures a cyclic group into a higher-rank topology. The analytical objective is to reverse-engineer this topological split. By evaluating the discriminants of the Weil polynomials and the absolute field invariants from the explicitly mapped curves, we aim to isolate the precise algebraic risk drivers that force the torsion subgroup to fracture.
+\item \textbf{Post-Quantum Goppa Codes and Trapdoor Audits:} This database serves a dual purpose for modern cryptography. We propose analyzing the Rank-4 supersingular curves for maximum distance separable properties to be used in Algebraic Geometry (Goppa) error-correcting codes. Conversely, we propose sweeping the database to map how degenerate topologies manifest in the $h(x)$ polynomial, providing security engineers with an audit framework to detect weak ``trapdoor'' curves that mimic strong cryptographic profiles.
+\item \textbf{Gauss Genus Theory and Low-Discrepancy Sequences (LDS):} 
+
+\begin{definition}[Gauss Genus Theory \cite{Gauss1801, Zhang2026}]
+Classically developed by Carl Friedrich Gauss, Genus Theory studies how mathematical objects called binary quadratic forms group together into ``equivalence classes.'' For hyperelliptic curves, this theory provides a direct, operational bridge: every element in the curve's Jacobian perfectly matches a reduced binary quadratic form. Analyzing these forms allows us to map the curve's 2-torsion subgroup without executing computationally heavy point-counting algorithms.
+\end{definition}
+
+\begin{definition}[Arf Invariants \cite{Arf1941}]
+In standard mathematics, the ``discriminant'' of a quadratic equation reveals its fundamental structure. However, in characteristic 2 binary fields, the classical discriminant breaks down (it becomes a perfect square). To restore structural visibility, Cahit Arf introduced the Arf invariant---a specialized mathematical flag (evaluating to 0 or 1) that successfully classifies quadratic forms when the base field operates in characteristic 2.
+\end{definition}
+
+In characteristic 2, executing Gauss Genus theory is uniquely complex due to the involution polynomial $h(x)$ and the strict necessity of Arf invariants to determine equivalence \cite{Zhang2026}. The explicit $\langle u(x), v(x) \rangle$ coordinate data cataloged in this database enables the systematic mapping of these Arf invariants without relying on abstract theoretical assumptions. Furthermore, these explicit mappings enable the construction of deterministic Low-Discrepancy Sequences, such as $(t, m, s)$-nets utilized in Quasi-Monte Carlo (QMC) numerical integration. By extracting the explicit divisor structures of the verified supersingular Rank-4 curves, practitioners can construct optimal, dense generator matrices for QMC applications.
+
+\item \textbf{Advanced Cohomology and Hardware Scaling:} The current Cartier-Manin linear sieve approach faces memory constraints at extreme scales. To push the explicit database into larger fields, the computational sieve will transition to advanced $p$-adic point-counting frameworks, specifically utilizing rigid cohomology and lifting curve differentials over Witt vectors on specialized, high-density local compute nodes (e.g., SSD-backed parallel clusters).
 \end{enumerate}
 
 Ultimately, we will apply the framework established here to expand the explicit database to the Mersenne prime field $\mathbb{F}_{128}$---implementing targeted sieve script optimizations specifically for Mersenne field arithmetic---and the byte-aligned $\mathbb{F}_{256}$, pushing the verified classification of characteristic 2 Jacobians closer to the boundaries of modern cryptographic deployment.
@@ -337,6 +417,9 @@ Ultimately, we will apply the framework established here to expand the explicit 
 The complete SQLite databases ($\mathbb{F}_{2}$ through $\mathbb{F}_{64}$) are deposited in the Zenodo repository. The author acknowledges the use of the Gemini large language model \cite{Gemini2026} as a structural formatting assistant, database schema architect, and mathematical code verification partner (Red-Team/Devil's Advocate protocols) during the drafting of this manuscript and algorithmic pipeline. All dataset cardinalities, proofs, and limits are the original work of the author and were independently verified.
 
 \begin{thebibliography}{99}
+
+\bibitem{Arf1941}
+Arf, C. (1941). Untersuchungen über quadratische Formen in Körpern der Charakteristik 2 (Teil I). \textit{Journal für die reine und angewandte Mathematik}, 183, 148-167.
 
 \bibitem{Cantor1987}
 Cantor, D. G. (1987). Computing in the Jacobian of a hyperelliptic curve. \textit{Mathematics of Computation}, 48(177), 95-101.
@@ -347,6 +430,9 @@ Cardona, G., Nart, E., \& Pujolà, J. (2005). Curves of genus 2 over fields of e
 \bibitem{Cartier1958}
 Cartier, P. (1958). Une nouvelle op\'{e}ration sur les formes diff\'{e}rentielles. \textit{Comptes Rendus de l'Acad\'{e}mie des Sciences}, 244, 426-428.
 
+\bibitem{Gauss1801}
+Gauss, C. F. (1801). \textit{Disquisitiones Arithmeticae}. (A. A. Clarke, Trans.). Yale University Press, 1965.
+
 \bibitem{Gemini2026}
 Google. (2026). \textit{Gemini} (Large Language Model) [Software]. Available at \url{https://gemini.google.com}.
 
@@ -356,11 +442,26 @@ Honda, T. (1968). Isogeny classes of abelian varieties over finite fields. \text
 \bibitem{Howe2009}
 Howe, E. W., Nart, E., \& Ritzenthaler, C. (2009). Jacobians in isogeny classes of abelian surfaces over finite fields. \textit{Annales de l'Institut Fourier}, 59(1), 239-289.
 
+\bibitem{Huber1990}
+Huber, K. (1990). Some comments on Zech's logarithms. \textit{IEEE Transactions on Information Theory}, 36(4), 946-950.
+
+\bibitem{Igusa1960}
+Igusa, J. I. (1960). Arithmetic moduli of elliptic curves. \textit{American Journal of Mathematics}, 82(4), 811-840.
+
+\bibitem{Katz1979}
+Katz, N. M. (1979). Slope filtration of F-crystals. \textit{Astérisque}, 63, 113-164.
+
 \bibitem{Katz1999}
 Katz, N. M., \& Sarnak, P. (1999). Random matrices, Frobenius eigenvalues, and monodromy. \textit{American Mathematical Society}.
 
+\bibitem{Lidl1997}
+Lidl, R., \& Niederreiter, H. (1997). \textit{Finite Fields} (Encyclopedia of Mathematics and its Applications). Cambridge University Press.
+
 \bibitem{Manin1963}
 Manin, Y. I. (1963). The Hasse-Witt matrix of an algebraic curve. \textit{Translations of the American Mathematical Society}, Series 2, 45, 245-264.
+
+\bibitem{Parker1990}
+Parker, R. A. (1990). The Conway polynomials. \textit{Preprint}, University of Cambridge.
 
 \bibitem{SageMath2026}
 The Sage Developers. (2026). \textit{SageMath, the Sage Mathematics Software System}. \url{https://www.sagemath.org}.
@@ -376,6 +477,9 @@ Serre, J.-P. (1983). Sur le nombre des points rationnels d'une courbe algébriqu
 
 \bibitem{ShoupNTL}
 Shoup, V. (2026). \textit{NTL: A Library for doing Number Theory}. \url{https://libntl.org/}.
+
+\bibitem{Silverman2009}
+Silverman, J. H. (2009). \textit{The Arithmetic of Elliptic Curves} (2nd ed., Graduate Texts in Mathematics). Springer.
 
 \bibitem{Tate1966}
 Tate, J. (1966). Endomorphisms of abelian varieties over finite fields. \textit{Inventiones mathematicae}, 2(2), 134-144.
@@ -958,12 +1062,11 @@ Why? Because the internal Weil pairing and Cartier-Manin operator translations a
 extension fields coerce the group generators into mathematically impossible topologies.
 
 THE BLACKHAT SOLUTION (Monte Carlo Divisor Sampling + Rank Clamping):
-Instead of trusting SageMath's internal generator logic, we treat the Jacobian as a 
-black box. We already know the EXACT geometric order (cardinality) of the group from 
-Honda-Tate theory (calculated previously in C++). 
-Therefore, we exploit random divisor sampling. By bombarding the Jacobian with random 
-elements and multiplying them by cofactors, we can isolate the exact maximal cyclic 
-subgroups for every prime factor (the Sylow p-subgroups). 
+Instead of trusting SageMath's internal generator logic, we treat the Jacobian as a black box. 
+We already know the EXACT geometric order (cardinality) of the group from Honda-Tate theory 
+(calculated previously in C++). Therefore, we exploit random divisor sampling. By bombarding 
+the Jacobian with random elements and multiplying them by cofactors, we can isolate the exact 
+maximal cyclic subgroups for every prime factor (the Sylow p-subgroups). 
 
 We then apply strict mathematical rank clamping:
 1. Characteristic p=2: The p-rank (Hasse-Witt matrix rank) of a genus g curve is AT MOST g. 
