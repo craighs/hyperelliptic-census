@@ -1,0 +1,2068 @@
+    1  ./pctool
+    2  cd ..
+    3  ./pctool help
+    4  which 
+    5  which ls
+    6  cd build
+    7  dir
+    8  cd picotool
+    9  sudo ln -s picotool /usr/bin/picotool
+   10  cd ..
+   11  which picotool
+   12  ./picotool help
+   13  ls -l
+   14  build
+   15  ls
+   16  cd build
+   17  dir
+   18  ls -l pctool 
+   19  unlink pctool
+   20  sudo reboot now
+   21  neofetch
+   22  history
+   23  sudo apt install neofetch
+   24  neofetch
+   25  history
+   26  sudo apt install fastfetch
+   27  sudo apt update
+   28  sudo apt upgrade
+   29  fastfetch
+   30  sudo apt install fastfetch
+   31  sudo apt install curl wget jq
+   32  NEO_VERSION=$(curl -s https://api.github.com/repos/fastfetch-cli/fastfetch/releases/latest | jq -r '.name')
+   33  neofetch
+   34  CPU_ARCH=amd64
+   35  CPU_ARCH=aarch64
+   36  wget https://github.com/fastfetch-cli/fastfetch/releases/download/$NEO_VERSION/fastfetch-linux-$CPU_ARCH.deb -O fastfetch.deb
+   37  sudo apt install ./fastfetch.deb
+   38  fastfetch
+   39  ping 10.0.0.101
+   40  time
+   41  date
+   42  fd
+   43  df
+   44  wget -qO- https://raw.githubusercontent.com/Botspot/pi-apps/master/install | bash
+   45  sudo apt update
+   46  sudo apt upgrade
+   47  sudo apt install blender
+   48  blender
+   49  where blender
+   50  whereis blender
+   51  cd /usr/bin/blender
+   52  cd /usr
+   53  cd bin
+   54  ls
+   55  ls blender
+   56  exit
+   57  fastfetch
+   58  htop
+   59  sudo dphys-swapfile swapon
+   60  sudo dphys-swapfile swapoff
+   61  sudo nano /etc/dphys-swapfile
+   62  sudo dphys-swapfile setup
+   63  sudo dphys-swapfile swapon
+   64  sudo reboot now
+   65  htop
+   66  cd Downloads/
+   67  dir
+   68  cd ..
+   69  ls
+   70  cd project-2
+   71  dir
+   72  ls -la
+   73  rm -rf .import
+   74  godot 
+   75  ls
+   76  nano CollisonShape3D.gd
+   77  cat CollisonShape3D.gd
+   78  godot 
+   79  godot --verbose
+   80  erase CollisionShape3D.gd
+   81  rm CollisionShape3D.gd
+   82  godot --verbose
+   83  ls
+   84  rm CollisionShape3D.gd.uid 
+   85  godot --verbose
+   86  cd ..
+   87  dir
+   88  cd project-2b/
+   89  dir
+   90  nano CollisionShape3D.gd
+   91  nano CollisionShape3D.gd.uid
+   92  godot --verbose
+   93  exit
+   94  htop
+   95  exit
+   96  whereis godot
+   97  cd /usr/local/bin
+   98  ls
+   99  godot --single-terminal
+  100  cd /dev
+  101  ls
+  102  ls fb*
+  103  sudo apt instrall gldriver-test_0.15
+  104  sudo apt install gldriver-test_0.15
+  105  glxinfo | grep -i "dri3"
+  106  glxgears
+  107  sudo apt install glxinfo glxgears
+  108  sudo raspi-config
+  109  sudo apt install gldriver-test_0.15_all.deb
+  110  cd /
+  111  cd etc/gdm3
+  112  cd etc
+  113  ls
+  114  ls gd*
+  115  sudo raspi-config
+  116  htop
+  117  godot
+  118  sudo raspi-config
+  119  godot
+  120  htop
+  121  ls
+  122  cd project-2d
+  123  dir
+  124  nanon CollisionShape3D.gd
+  125  nano CollisionShape3D.gd
+  126  cd 
+  127  git clone https://github.com/godotengine/godot.git
+  128  cd godot
+  129  scons platform=linuxbsd
+  130  sudo apt install vulkan-tools mesa-vulkan-drivers
+  131  bin/godot.linuxbsd.editor.arm64 --rendering-driver vulkan
+  132  ls
+  133  cd bin
+  134  ls
+  135  cat README.md
+  136  ls
+  137  make
+  138  python -m pip install scons
+  139  exit
+  140  htop
+  141  df
+  142  cd sage
+  143  ./sage 
+  144  cd sage
+  145  ./sage
+  146  make ptestlong
+  147  exit
+  148  make
+  149  ls
+  150  ls
+  151  cd /sage/sage/log
+  152  cd 
+  153  ls
+  154  cd sage/sage
+  155  cd logs/
+  156  dir
+  157  nano install.log
+  158  cd pkgs
+  159  cd logs
+  160  dir
+  161  exit
+  162  cd godot
+  163  dir
+  164  cd bin
+  165  dir
+  166  cd ..
+  167  rm -rf godot
+  168  godot --verbose
+  169  fastfetch
+  170  df
+  171  apt-get update
+  172  sudo apt-get update
+  173  sudo apt-get sagemath
+  174  sudo apt-get install sagemath
+  175  sage 
+  176  gap
+  177  sage -n jupyterlab
+  178  sudo apt-get install jupyterlab
+  179  sage -i jupyterlab_widgets
+  180  sage -i jupyterlab
+  181  sudo apt-get remove sagemath
+  182  df
+  183  sudo apt-get install bc binutils bzip2 ca-certificates cliquer cmake curl         ecl eclib-tools fflas-ffpack flex g++ gap gcc gengetopt gfan gfortran         glpk-utils gmp-ecm lcalc libatomic-ops-dev libboost-dev         libbraiding-dev libbrial-dev libbrial-groebner-dev libbz2-dev         libcdd-dev libcdd-tools libcliquer-dev libcurl4-openssl-dev libec-dev         libecm-dev libffi-dev libflint-dev libfplll-dev libfreetype-dev         libgap-dev libgc-dev libgd-dev libgf2x-dev libgivaro-dev libglpk-dev         libgmp-dev libgsl-dev libhomfly-dev libiml-dev liblfunction-dev         liblinbox-dev liblrcalc-dev liblzma-dev libm4ri-dev libm4rie-dev         libmpc-dev libmpfi-dev libmpfr-dev libncurses5-dev libntl-dev         libopenblas-dev libpari-dev libplanarity-dev libppl-dev         libprimecount-dev libprimesieve-dev libpython3-dev libqhull-dev         libreadline-dev librw-dev libsingular4-dev libsqlite3-dev libssl-dev         libsuitesparse-dev libsymmetrica2-dev libz-dev libzmq3-dev m4 make         maxima maxima-sage meson nauty ninja-build openssl palp pari-doc         pari-elldata pari-galdata pari-galpol pari-gp2c pari-seadata patch         patchelf perl pkg-config planarity ppl-dev python3 python3-setuptools         python3-venv qhull-bin singular singular-doc sqlite3 sympow tachyon         tar texinfo tox xz-utils
+  184  sudo apt-get install autoconf automake gh git gpgconf libtool         openssh-client pkg-config
+  185  sudo apt-get install default-jdk dvipng ffmpeg fonts-freefont-otf         imagemagick latexmk libavdevice-dev libjpeg-dev pandoc tex-gyre         texlive-fonts-recommended texlive-lang-cyrillic texlive-lang-english         texlive-lang-european texlive-lang-french texlive-lang-german         texlive-lang-italian texlive-lang-japanese texlive-lang-polish         texlive-lang-portuguese texlive-lang-spanish texlive-latex-extra         texlive-luatex texlive-xetex xindy
+  186  sudo apt-get install 4ti2 clang coinor-cbc coinor-libcbc-dev fricas         graphviz libfile-slurp-perl libgiac-dev libgraphviz-dev libigraph-dev         libisl-dev libjson-perl libmongodb-perl libnauty-dev libperl-dev         libpolymake-dev libsvg-perl libtbb-dev libterm-readkey-perl         libterm-readline-gnu-perl libxml-libxslt-perl libxml-writer-perl         libxml2-dev lrslib pari-gp2c pdf2svg polymake sbcl xcas
+  187  sudo apt-get install tk tk-dev
+  188  ls
+  189  git --version
+  190  mkdir -p ~/sage
+  191  cd sage
+  192  [200~git clone -c core.symlinks=true --filter blob:none                --origin upstream --branch develop --tags \
+  193  git clone -c core.symlinks=true --filter blob:none --origin upstream --branch master --tags https://github.com/sagemath/sage.git
+  194  cd sage
+  195  make configure
+  196  ./configure --help
+  197  export MAKEFLAGS="-j$(nproc) -l$(nproc).5"
+  198  ./configure
+  199  sudo apt-get update
+  200  sudo apt-get install libec-dev eclib-tools fflas-ffpack libflint-dev libfplll-dev gap libgap-dev libgivaro-dev texinfo lcalc liblfunction-dev libbraiding-dev liblinbox-dev liblrcalc-dev maxima-sage maxima nauty pari-gp2c libpari-dev pari-doc pari-elldata pari-galdata pari-galpol pari-seadata singular singular-doc libsingular4-dev tox
+  201  sudo apt-get install 4ti2 gpgconf openssh-client default-jdk libavdevice-dev fricas libgiac-dev xcas pari-gp2c libigraph-dev libnauty-dev lrslib 
+  202  make
+  203  ==
+  204  ./sage
+  205  gap
+  206  dir
+  207  cd pkgs/
+  208  dir
+  209  whereis gap
+  210  ls
+  211  cd ..
+  212  ls
+  213  ./sage -i jupyterlab
+  214  ./sage -n jupyterlab
+  215  sudo apt-get remove gap
+  216  gap
+  217  whereis gap
+  218  cd /usr/lib/aarch64-linux-gnu/gap
+  219  dir
+  220  ./gap
+  221  cd ..
+  222  ls
+  223  ./gap
+  224  cap
+  225  cd gap
+  226  ls
+  227  cd gap
+  228  ./gap
+  229  sudo nano sysinfo.gap
+  230  ls
+  231  cd ..
+  232  ls g*
+  233  cd 
+  234  sudo apt-get purge gap
+  235  sudo apt-get --purge autoremove gap
+  236  gap
+  237  whereis gap
+  238  cd /usr/bin
+  239  sudo rm -rf gap
+  240  sudo rm -rf gac
+  241  gap
+  242  cd /usr/lib/aarch64-linux-gnu/
+  243  sudo rm -rf gap
+  244  sudo rm -rf gac
+  245  cd /usr/lib/gap
+  246  ls
+  247  cd ..
+  248  ls
+  249  rm -rf gap
+  250  sudo rm -rf gap
+  251  whereis gap
+  252  cd /usr/include
+  253  sudo rm -rf gap
+  254  cd /usr/share/gap
+  255  sudo rm -rf gap
+  256  whereis gap
+  257  cd ..
+  258  sudo rm -rf gap
+  259  whereis gap
+  260  cd man
+  261  cd man1
+  262  ls
+  263  ls gap*
+  264  sudo rm gap.1.gz 
+  265  sudo rm gap2deb.1.gz
+  266  sudo rm gap.real.1.gz 
+  267  ls
+  268  cd 
+  269  ls
+  270  cd sage
+  271  ls
+  272  ./sage -i gap
+  273  gap
+  274  make configure
+  275  ./configure  --help
+  276  nano ./configure  
+  277  nano configure  
+  278  ls
+  279  cat configure
+  280  configure_wrapper
+  281  cat configure_wrapper
+  282  nano Makefile
+  283  ./configure
+  284  sudo apt-get install build-essential autoconf libtool libgmp-dev libreadline-dev zlib1g-dev
+  285  cd
+  286  ls Downloads/
+  287  cd Downloads/
+  288  dir
+  289  cp gap-4.14.0.tar.gz ..
+  290  cd ..
+  291  ls gap*
+  292  cd gap-4.14.0/
+  293  dir
+  294  ./configure && make
+  295  cd pkgs
+  296  cd pkg/
+  297  dir
+  298  ../bin/BuildPackages.sh
+  299  cd ./log
+  300  cat fail.log
+  301  cd ..
+  302  whereis gap
+  303  cd gap
+  304  ls
+  305  ./gap
+  306  ls
+  307  ./configure
+  308  ls
+  309  nano Makefile
+  310  whereis gap
+  311  cd ..
+  312  whereis gap
+  313  gap
+  314  cd gap
+  315  cd gap-4.14.0/
+  316  cat gap.ini
+  317  nano autogen.sh 
+  318  nano README.md
+  319  make bootstrap-pkg-full
+  320  rm -rf pkg
+  321  make bootstrap-pkg-full
+  322  cd pkg
+  323  dir
+  324  ../bin/BuildPackages.sh
+  325  cd log
+  326  cat fail.log
+  327  cd ..
+  328  ls
+  329  ./gap
+  330  htop
+  331  raspi-config
+  332  sudo raspi-config
+  333  uname
+  334  ip a
+  335  sudo raspi-config
+  336  uname
+  337  ip a
+  338  iwconfig
+  339  cd 
+  340  cd sage
+  341  dir
+  342  ./sage --optional
+  343  ./sage -i r sagemath_meataxe texlive_luatex texlive
+  344  ./sage -i r 
+  345  ./sage -i sagemath_meataxe texlive_luatex texlive
+  346  ./sage -i texlive_luatex
+  347  ./sage -i texlive
+  348  ./sage -i jupyterlab_widgets
+  349  ./sage -i pip
+  350  ./sage -i conway_polynomials ecm elliptic_curves gf2x gmp lcalc m4ri m4rie rpy2
+  351  ./sage
+  352  make
+  353  ./sage
+  354  cd pkg
+  355  dir
+  356  ls
+  357  cd logs
+  358  dir
+  359  cd pkgs
+  360  ls r*
+  361  nano r-none.log
+  362  cd ..
+  363  ./configure
+  364  sudo apt-get r
+  365  sudo apt-get install r texlive-luatex
+  366  sudo apt-get install texlive-luatex
+  367  cd logs
+  368  dir
+  369  nano install.log
+  370  SAGE_KEEP_BUILT_SPKGS=yes
+  371  nano install.log
+  372  (cd '/home/steve/sage/sage/local/var/tmp/sage/build/sagemath_doc_html-none' && '/home/steve/sage/sage/sage' --buildsh)
+  373  dir
+  374  cd pkgs
+  375  dir
+  376  ls sage*
+  377  nano sagemath_doc_html-none.log
+  378  cd ..
+  379  ls
+  380  nano config
+  381  cd config
+  382  ls
+  383  cd ..
+  384  ls
+  385  cd pkgs
+  386  dir
+  387  sudo rm -rff sage-docbuild
+  388  sudo rm -rf sage-docbuild
+  389  ls
+  390  cd ..
+  391  ./configure
+  392  ./configure --enable-sagemath_doc_pdf
+  393  make
+  394  cd sage
+  395  ls
+  396  cd sage
+  397  make doc-pdf
+  398  ln
+  399  sudo find / -type l
+  400  sudo find / -type l | grep "gap"
+  401  cd sage
+  402  /home/steve/sage/sage/local/lib/libgap.so
+  403  /home/steve/sage/sage/build/pkgs/gap_packages/package-version.txt
+  404  /home/steve/sage/sage/build/pkgs/gap_packages/checksums.ini
+  405  cd sage
+  406  cd local
+  407  cd lib
+  408  dir
+  409  ls *gap*
+  410  rm libgap.so
+  411  rm libgap.so.9 
+  412  ls gap
+  413  ./gap
+  414  gap
+  415  cd gap
+  416  dir
+  417  ./gap
+  418  cd ..
+  419  ls
+  420  rm -rf gap
+  421  ls *gap*
+  422  [200~/home/steve/sage/sage/local/lib/libgap.so
+  423  /home/steve/sage/sage/build/pkgs/gap_packages/package-version.txt
+  424  /home/steve/sage/sage/build/pkgs/gap_packages/checksums.ini
+  425  ~cd ..
+  426  cd ..
+  427  cd 
+  428  cd sage/sage
+  429  cd build
+  430  cd pkgs
+  431  ls
+  432  ls gap*
+  433  rm -rf gap
+  434  rm -rf gap3
+  435  rm -rf gap_
+  436  ls *gap*
+  437  rm -rf gap_packages
+  438  ls *gap*
+  439  cd gap
+  440  cd ..
+  441  cdd ..
+  442  cd ..
+  443  ls
+  444  ./configure
+  445  ls
+  446  ./bootstrap
+  447  cd build
+  448  dir
+  449  cd pkgs
+  450  dir
+  451  ls gap*
+  452  cd ..
+  453  ls
+  454  git clone -c core.symlinks=true --filter blob:none                --origin upstream --branch develop --tags               https://github.com/sagemath/sage.git
+  455  sudo rm sage
+  456  sudo rm -rf sage
+  457  git clone -c core.symlinks=true --filter blob:none                --origin upstream --branch master --tags               https://github.com/sagemath/sage.git
+  458  cd sage
+  459  make configure
+  460  ./configure --help
+  461  ./configure
+  462  ./configure --enable-gap_jupyter --enable-gap_packages
+  463  export MAKEFLAGS="-j$(nproc) -l$(nproc).5"
+  464  make
+  465  ./sage -n jupyterlab
+  466  make plongtest
+  467  make ptestlong
+  468  ls
+  469  cd gap
+  470  cd gap-4.14.0/
+  471  ls
+  472  gap
+  473  ./gap
+  474  exit
+  475  cd sage
+  476  dir
+  477  cd logs
+  478  dir
+  479  cat install.log
+  480  ls
+  481  htop
+  482  neofetch
+  483  fastfetch
+  484  ls
+  485  cp install.log  install.x
+  486  nano install.x
+  487  cd ..
+  488  ./sage 
+  489  ./sage -n jupyterlab
+  490  exit
+  491  htop
+  492  fastfetch
+  493  exit
+  494  cd sage
+  495  ./sage
+  496  cd ..
+  497  rm -rf sage
+  498  df
+  499  git clone -c core.symlinks=true --filter blob:none                --origin upstream --branch develop --tags               https://github.com/sagemath/sage.git
+  500  rm -rf sage
+  501  git clone -c core.symlinks=true --filter blob:none                --origin upstream --branch master --tags               https://github.com/sagemath/sage.git
+  502  ls
+  503  cd sage
+  504  make configure
+  505  export MAKEFLAGS="-j$(nproc) -l$(nproc).5"
+  506  ./configure --help >hlp.txt
+  507  nano hlp.txt
+  508  ./configure
+  509  nano 1.txt
+  510  nano 1.txt 
+  511  cat 1.txt
+  512  ./configure --enable-gap_jupyter --enable-gap_packages --enable-sagemath_doc_pdf --enable-singular_jupyter
+  513  make
+  514  ./sage
+  515  ./sage -n jupyterlab
+  516  sudo apt-get install nodejs
+  517  ./sage -n jupyterlab
+  518  jupyter lab --nobrowser
+  519  whereis jupyter
+  520  make ptestlong
+  521  ls
+  522  ./sage --optional
+  523  ls
+  524  make con figure
+  525  ./sage -i parijupyter
+  526  ./sage
+  527  ./sage -n jupyterlab
+  528  cd local 
+  529  cd bin
+  530  dir
+  531  cat gap
+  532  ./gap
+  533  ls
+  534  .gap
+  535  ./gap
+  536  whereis gap
+  537  cd ..
+  538  ./sage -n jupyterlab
+  539  jupyter
+  540  jupyter --version
+  541  cd 
+  542  git clone https://github.com/andreafabrizi/Dropbox-Uploader.git
+  543  cd Dropbox-Uploader/
+  544  sudo chmod +x dropbox_uploader.sh
+  545  cd ..
+  546  ./dropbox_uploader.sh
+  547  cd Dropbox-Uploader/
+  548  ./dropbox_uploader.sh 
+  549  ls
+  550  ./dropbox_uploader.sh list
+  551  ls
+  552  mkdir sage
+  553  cd sage
+  554  ls
+  555  cd 
+  556  cd Dropbox-Uploader/
+  557  ls
+  558  cp *.ipynb sage
+  559  cd sage
+  560  dir
+  561  cd ..
+  562  rm *.ipynb
+  563  dir
+  564  rm *.zip
+  565  ls
+  566  ./dropbox_uploader.sh upload sage /
+  567  cd sage
+  568  ~/sage/sage/sage -n jupyterlab
+  569  sudo dphys-swapfile swapoff
+  570  sudo nano /etc/dphys-swapfile
+  571  sudo dphys-swapfile setup
+  572  jupyter
+  573  jupyter kernelspec list
+  574  jupyter --version
+  575  jupyter --runtime-dir
+  576  jupyter --paths
+  577  jupyter --config-dir
+  578  cd .jupyter
+  579  nano .jupyter
+  580  ls -la 
+  581  ./gap
+  582  .gap
+  583  cat .gap
+  584  cd .gap
+  585  dir
+  586  cd ..
+  587  ls -la
+  588  ls -la .jupyter
+  589  jupyter --config-dir
+  590  cd 
+  591  ls -la
+  592  cd sage
+  593  cd src
+  594  dir
+  595  cd sage
+  596  dir
+  597  /home/steve/sage/sage/local/bin/gap
+  598  /home/steve/sage/sage/local/bin/singular
+  599  ls
+  600  cd /home/steve/sage/sage/local/bin
+  601  ls
+  602  ./maxima
+  603  ls
+  604  gap
+  605  .gap
+  606  ./gap
+  607  echo JUPYTER_GAP_KERNEL
+  608  pip install .
+  609  pip install . --user
+  610  jypyter 
+  611  jupyter
+  612  whereis jupyter
+  613  gap
+  614  export JUPYTER_GAP_EXECUTABLE=/home/steve/sage/sage/local/bin/gap
+  615  gap
+  616  .gap
+  617  ls
+  618  .gap
+  619  ./gap
+  620  cd ..
+  621  sage -n jupyterlab
+  622  ./sage -n jupyterlab
+  623  ./sage -n jupyter
+  624  sudo apt update
+  625  sudo apt upgrade
+  626  sudo apt install curl ggit
+  627  sudo apt install curl git
+  628  sudo dphys-swapfile swapon
+  629  fastfetch
+  630  htop
+  631  sudo reboot now
+  632  ip a
+  633  sudo shutdown now
+  634  exit
+  635  exit
+  636  exit
+  637  cd sage
+  638  ./sage -n jupyterlab
+  639  sudo shutdown now
+  640  ls
+  641  cd sage/sage
+  642  ./sage
+  643  ip a
+  644  raspi-config
+  645  sudo raspi-config
+  646  sudo shutdown now
+  647  sudo reboot now
+  648  sudo systemctl status sshd
+  649  sudo nano /boot/firmware/config.txt
+  650  sudo reboot now
+  651  exit
+  652  dmesg -l 0,1,2,3
+  653  sudo shutdown now
+  654  dmesg -1 0,1,2,3
+  655  dmesg -l 0,1,2,3
+  656  sudo rpi-update pulls/6645
+  657  sudo apt update
+  658  sudo apt full-upgrade
+  659  sudo apt remove wolfram-engine
+  660  sudo apt install wolfram-engine
+  661  sudo apt remove --purge wolfram-engine
+  662  sudo apt clean sudo apt autoremove
+  663  cd /usr/local
+  664  ls
+  665  cd 
+  666  ls -la
+  667  ls .wolfram
+  668  ls -la .wolfram
+  669  cd .cache
+  670  ls -la
+  671  ls -la WOlfram
+  672  cd /opt
+  673  ls
+  674  rm -rf Wolfram 
+  675  sudo rm -rf Wolfram 
+  676  cd ..
+  677  cd .config
+  678  ls
+  679  ls -la
+  680  sudo apt remove --purge wolfram-engine
+  681  sudo apt install whereis
+  682  locate wolfram-engine
+  683  locate
+  684  pwd
+  685  which wolfram-engine
+  686  which Wolfram-engine
+  687  which which
+  688  cd /usr/bin
+  689  dir
+  690  ls -la wol*
+  691  cd /opt
+  692  ls
+  693  cd /etc
+  694  ls
+  695  cd alternatives/
+  696  ls
+  697  sudo -rf wolframscript
+  698  sudo rm wolframscript 
+  699  ls
+  700  ls -la wol*
+  701  cd ..
+  702  ls -la wol*
+  703  cd /
+  704  ls -la wol*
+  705  cd /opt
+  706  ls
+  707  ls -la wol*
+  708  which Wolfram-engine
+  709  which Wolfram
+  710  which mathematica
+  711  which which
+  712  cd /usr/bin
+  713  ls
+  714  ls -la math*
+  715  rm math
+  716  sudo rm -rf math
+  717  sudo rm -rf mathematica
+  718  ls -la math*
+  719  ls -la wolf*
+  720  sudo rm -rf wolfram
+  721  sudo rm -rf wolframscript
+  722  ls -la wolf*
+  723  sudo apt remove --purge wolfram-engine
+  724  cd /var/lib/dpkg
+  725  ls
+  726  cat status
+  727  sudo nano status
+  728  cd 
+  729  sudo apt update
+  730  sudo apt full-upgrade
+  731  sudo rpi-eeprom--update 
+  732  sudo rpi-eeprom-update 
+  733  sudo rpi-eeprom-update -a
+  734  sudo shutdown halt
+  735  sudo shutdown
+  736  time
+  737  date
+  738  firefox 
+  739  sudo shutdown
+  740  exit
+  741  cd sage/sage
+  742  ls
+  743  cd ..
+  744  ls
+  745  cd Dropbox-Uploader/
+  746  dir
+  747  cd sage
+  748  dir
+  749  ~/sage/sage/sage -n jupyterlab
+  750  dmesg -l 0,1,2,3
+  751  cd sage
+  752  ./sage 
+  753  ./sage -n jupyterlab
+  754  cd 
+  755  cd Dropbox-Uploader/
+  756  dir
+  757  cd sage
+  758  dir
+  759  ../dropbox_uploader.sh upload Untitled.ipynb 
+  760  history 
+  761  history | grep "dropbox"
+  762  cd ..
+  763  ./dropbox_uploader.sh upload sage /
+  764  ./dropbox_uploader.sh upload sage/Untitled.ipynb /
+  765  ./dropbox_uploader.sh upload sage/Untitled.ipynb /sage
+  766  ./dropbox_uploader.sh download sage/Untitled.ipynb /sage
+  767  ./dropbox_uploader.sh -d download sage/Untitled.ipynb /sage
+  768  ./dropbox_uploader.sh download /sage/Untitled.ipynb sage/Untitled.ipynb
+  769  ./dropbox_uploader.sh download Untitled.ipynb/sage Untitled.ipynb/sage
+  770  ./dropbox_uploader.sh download sage/Untitled.ipynb .
+  771  ./dropbox_uploader.sh list sage
+  772  ./dropbox_uploader.sh list sage/2025-04
+  773  ./dropbox_uploader.sh download sage/2025-04/Untitled.ipynb .[B
+  774  ./dropbox_uploader.sh download sage/2025-04/Untitled.ipynb /sage/Untitled.ipynb
+  775  sudo ./dropbox_uploader.sh download sage/2025-04/Untitled.ipynb /sage/Untitled.ipynb
+  776  ./dropbox_uploader.sh download sage/2025-04/Untitled.ipynb ~/
+  777  ./dropbox_uploader.sh download sage/2025-04/Untitled.ipynb 
+  778  ls
+  779  ./dropbox_uploader.sh space
+  780  ./dropbox_uploader.sh info
+  781  sudo shutdown now
+  782  ls
+  783  raspi-config
+  784  sudo raspi-config
+  785  cd sage/sage
+  786  ./sage -n jupyterlab
+  787  sudo shutdown 
+  788  sudo shutdown
+  789  sudo shutdown  
+  790  cd /home/steve/sage/sage/venv/share/texmf/tex/latex/sagetex
+  791  cd /home/steve
+  792  cd /home/steve/sage/sage/venv/share/texmf/tex/latex/sagetex
+  793  sudo apt install texstudio
+  794  ls *.tex
+  795  clear
+  796  cd sage/sage
+  797  ls -la *.tex
+  798  ls -la
+  799  clear
+  800  which tEx*
+  801  whice texlive*
+  802  which texlive
+  803  which tex*
+  804  cd venv
+  805  ls
+  806  cd share
+  807  ls
+  808  cd texmf
+  809  clear
+  810  ls
+  811  cd tex
+  812  ls
+  813  cd latex
+  814  ls
+  815  cd sagetex
+  816  ls
+  817  clear
+  818  ls
+  819  latex example.tex
+  820  ls
+  821  sage example.sagetex.sage
+  822  which latex
+  823  cd 
+  824  clear
+  825  ECHO SAGE_LOCAL
+  826  echo SAGE_LOCAL
+  827  cd sage 
+  828  cd sage
+  829  ls
+  830  clear
+  831  sudo ln -s sage /usr/local/bin/sage
+  832  sage
+  833  ls -la sage
+  834  sudo ln -s ./sage /usr/local/bin/sage
+  835  sudo rm /usr/local/bin/sage
+  836  sudo ln -s ./sage /usr/local/bin/sage
+  837  sage
+  838  ./sage
+  839  cd 
+  840  sage
+  841  ./sage
+  842  clear
+  843  which latex
+  844  sudo ln -s ./sage /usr/local/bin/sage
+  845  rm /usr/local/bin/sage
+  846  sudo rm /usr/local/bin/sage
+  847  sudo ln -s /home/steve/sage/sage/sage /usr/local/bin/sage
+  848  sudo rm /usr/local/bin/sage
+  849  sudo ln -s /home/steve/sage/sage/sage /usr/bin/sage
+  850  sage
+  851  quit
+  852  clear
+  853  cd sage/sage/local
+  854  ls
+  855  cd share
+  856  ls
+  857  cd
+  858  ls
+  859  clear
+  860  ls
+  861  history
+  862  clear
+  863  cd sage/sage/venv/share
+  864  ls
+  865  cd texmf
+  866  ls
+  867  cd tex
+  868  ls
+  869  cd latex
+  870  ls
+  871  cd sagetex
+  872  clear
+  873  ls
+  874  sage example.sagetex.sage
+  875  clear
+  876  latex example.tex
+  877  sage example.sagetex.sage
+  878  latex example.tex
+  879  pdflatex example.tex
+  880  ls
+  881  example.pdf
+  882  clear
+  883  ping 10.0.0.88
+  884  ip a
+  885  nnet 
+  886  ip neigh
+  887  ping 10.0.0.234
+  888  arp -a
+  889  ping 10.0.0.88
+  890  ip a
+  891  ping 169.254.35.237
+  892  ping 10.0.0.8
+  893  ip a
+  894  ping 10.0.0.8
+  895  ping 10.0.0.264
+  896  ip a
+  897  ip neigh
+  898  nmtui
+  899  ip address
+  900  sudo reboot
+  901  ip a
+  902  nnet
+  903  ping 10.0.0.111
+  904  ping 10.0.0.110
+  905  cd /etc
+  906  cat dhcpcd.conf
+  907  ip a
+  908  sudo nano dhcpcd.conf 
+  909  sudo reboot
+  910  ip a
+  911  ping 10.0.0.111
+  912  ping 10.0.0.107
+  913  ip neigh
+  914  ping 10.0.0.106
+  915  sudo shutdown now
+  916  ping 10.0.0.106
+  917  ip neigh
+  918  sudo  shutdown now
+  919  sudo shutdown now
+  920  ip neigh
+  921  ip a
+  922  lsudoo shutdown now
+  923  sudo shutdown now
+  924  ip neigh
+  925  ip a
+  926  ping 10.0.0.6
+  927  sage
+  928  cd sage/sagae
+  929  cd sage\sage
+  930  cd sage
+  931  dir
+  932  cd sage
+  933  ls -la
+  934  ls -la Drop*
+  935  cd ..
+  936  ls
+  937  cd ..
+  938  cd Dropbox-Uploader/
+  939  dir
+  940  cd sage
+  941  ls
+  942  sage -n jupyterlab
+  943  gap
+  944  cd gap
+  945  ls -la gap*
+  946  ls -la
+  947  which gap
+  948  cd gap-4.14.0/
+  949  ls
+  950  gap
+  951  ./gap
+  952  cd sage
+  953  ls
+  954  cd venv
+  955  ls
+  956  cd share
+  957  ls
+  958  cd applications/
+  959  ls
+  960  cd .
+  961  ls
+  962  cd ..
+  963  ls
+  964  cd texmf/
+  965  ls
+  966  cd tex
+  967  ls
+  968  cd latex/
+  969  ls
+  970  cd sagetex/
+  971  ls
+  972  latex example.tex
+  973  ls
+  974  sage example.sagetex.sage
+  975  ls
+  976  ls -la
+  977  pdflatex example.dvi
+  978  ls
+  979  nano example.tex
+  980  pdflatex example.tex
+  981  ls
+  982  ls -la example.*
+  983  latex example.tex 
+  984  sage example.sagetex.sage
+  985  cd sage
+  986  dir
+  987  cd local
+  988  ls
+  989  cd share
+  990  ls
+  991  cd texinfo/
+  992  ls
+  993  cd ..
+  994  ls
+  995  cd ..
+  996  ls
+  997  cd .
+  998  ls
+  999  cd ..
+ 1000  ls
+ 1001  cd venv
+ 1002  ls
+ 1003  cd share
+ 1004  ls
+ 1005  cd texmf
+ 1006  ls
+ 1007  cd tex
+ 1008  ls
+ 1009  cd latex
+ 1010  ls
+ 1011  cd sagetex/
+ 1012  ls
+ 1013  latex example.tex
+ 1014  sage example.sagetex.sage
+ 1015  ls
+ 1016  sage example.sagetex.sage
+ 1017  ls
+ 1018  cd Dropbox-Uploader/
+ 1019  ls
+ 1020  cd sage
+ 1021  ls
+ 1022  sage -n jupyterlab
+ 1023  ip a
+ 1024  sudo shutdown now
+ 1025  ls
+ 1026  cd /mnt
+ 1027  ls
+ 1028  cd mydrive/shared/
+ 1029  ls
+ 1030  quit
+ 1031  exit
+ 1032  sudo apt-get update
+ 1033  sudo apt-get upgrade
+ 1034  sudo apt-get clean
+ 1035  sudo apt install samba
+ 1036  sudo apt install samba-common-bin
+ 1037  sudo apt autoremove
+ 1038  sudo nano /etc/samba/smb.conf
+ 1039  cd Dropbox-Uploader/
+ 1040  cd sage
+ 1041  ls
+ 1042  sudo smbpasswd -a steve 
+ 1043  sudo systemctl restart smdb
+ 1044  cd 
+ 1045  sudo systemctl restart smbd
+ 1046  sudo mkdir /mnt/mydrive/shared
+ 1047  cd /mnt
+ 1048  ls
+ 1049  mkdir mydrive/shared
+ 1050  mkdir mydrive
+ 1051  ls
+ 1052  sudo mkdir mydrive/shared
+ 1053  ls
+ 1054  sudo mkdir mydrive
+ 1055  cd mydrive/
+ 1056  sudo mkdir shared
+ 1057  sudo chmod -R 777 /mnt/mydrive/shared
+ 1058  cd 
+ 1059  sudo nano /etc/samba/smb.conf
+ 1060  sudo systemctl restart smbd
+ 1061  ls
+ 1062  cd Dropbox-Uploader/
+ 1063  ls
+ 1064  cd sage
+ 1065  ls
+ 1066  sage -n jupyterlab
+ 1067  sudo shutdown now
+ 1068  ls
+ 1069  cd /mnt
+ 1070  ls
+ 1071  cd mydrive/
+ 1072  cd shared
+ 1073  ls
+ 1074  exit
+ 1075  cd Dropbox-Uploader/
+ 1076  cd sage
+ 1077  ls
+ 1078  cp TRIOP8.ipynb /mnt/mydrive/shared
+ 1079  ls
+ 1080  cd /mnt
+ 1081  cd mydrive/shared/
+ 1082  sage -n jupyterlab
+ 1083  exit
+ 1084  sudo shutdown now
+ 1085  ls co*
+ 1086  ls
+ 1087  sage -n jupyterlab
+ 1088  sudo shutdown now
+ 1089  cd sage
+ 1090  ls
+ 1091  cd local
+ 1092  ls
+ 1093  cd share
+ 1094  ls
+ 1095  cd doc
+ 1096  ls
+ 1097  cd sage
+ 1098  ls
+ 1099  cd pdf
+ 1100  ls
+ 1101  cd en
+ 1102  ls
+ 1103  cd reference
+ 1104  ls
+ 1105  cd algebras/
+ 1106  ls
+ 1107  algebras.pdf
+ 1108  .algebras.pdf
+ 1109  ./algebras.pdf
+ 1110  okular
+ 1111  which pdf*
+ 1112  which sage
+ 1113  which ok*
+ 1114  which evince
+ 1115  evince algebras.pdf 
+ 1116  htop
+ 1117  exit
+ 1118  ssh steve@10.0.0.88
+ 1119  ip neight
+ 1120  ip neigh
+ 1121  ping 10.0.0.155
+ 1122  ping 10.0.0.88
+ 1123  ping 10.0.0.6
+ 1124  cd /etc
+ 1125  ls
+ 1126  ls int*
+ 1127  ls
+ 1128  ls net*
+ 1129  cd network
+ 1130  ls
+ 1131  cd interfaces.d/
+ 1132  ls
+ 1133  cat eth0
+ 1134  cd 
+ 1135  cd etc
+ 1136  cd /etcc
+ 1137  cd /etc
+ 1138  ls dhc*
+ 1139  sudo nano dhcpcd.conf 
+ 1140  ip a
+ 1141  cat dhcpcd.conf 
+ 1142  exit
+ 1143  sudo apt-get wine box32
+ 1144  sudo apt update
+ 1145  sudo apt install wine
+ 1146  which wine
+ 1147  wine
+ 1148  sudo apt install box32
+ 1149  sudo apt remove wine
+ 1150  sudo apt purge wine
+ 1151  sudo apt autoremove
+ 1152  ls
+ 1153  cd pi-apps/
+ 1154  ls
+ 1155  cd logs
+ 1156  ls
+ 1157  ping google.com
+ 1158  ping 8.8.8.8
+ 1159  ping 4.4.8.8
+ 1160  ping 10.0.0.1
+ 1161  ping 140.82.114.4
+ 1162  ping 10.0.0.7
+ 1163  ping 10.0.0.6
+ 1164  ping google.com
+ 1165  ip a
+ 1166  ip neigh
+ 1167  ping 2001:4860:4860::8844
+ 1168  ip neigh
+ 1169  ping 140.82.114.4
+ 1170  cd 
+ 1171  ls
+ 1172  sudo apt install libreoffice
+ 1173  df
+ 1174  ls exam.txt 
+ 1175  sudo raspi-config
+ 1176  ssh steve@10.0.0.107
+ 1177  ls
+ 1178  exit
+ 1179  cd sage
+ 1180  find . -type f -name '*.rst'
+ 1181  find . -type f -name '*.rst' > rst.txt
+ 1182  sudo nano rst.txt
+ 1183  cd src
+ 1184  cd doc
+ 1185  cd en
+ 1186  cd reference/
+ 1187  ls
+ 1188  cd algebras/
+ 1189  ls
+ 1190  nano lie_algebras.rst 
+ 1191  ls
+ 1192  cd sage
+ 1193  ls
+ 1194  cd algebras/
+ 1195  ls
+ 1196  cd lie_algebras/
+ 1197  ls
+ 1198  nano affine_lie_algebra.rst 
+ 1199  cat affine_lie_algebra.rst 
+ 1200  cd ..
+ 1201  ls
+ 1202  cd sage
+ 1203  ls
+ 1204  cd upstream
+ 1205  ls
+ 1206  ls -la *lie*
+ 1207  cd ..
+ 1208  find . -type f -name 'sage.algebras*' 
+ 1209  find . -name 'sage.algebras.lie_algebras.affine_lie_algebra'
+ 1210  find . -type f -name '*.tex'
+ 1211  find . -type f -name '*.tex' > tex.tex
+ 1212  nano tex.tex
+ 1213  cd local
+ 1214  ls
+ 1215  cd share
+ 1216  ls
+ 1217  cd sage
+ 1218  cd doc
+ 1219  cd sage
+ 1220  ls
+ 1221  cd latex
+ 1222  cd en
+ 1223  ls
+ 1224  cd reference/
+ 1225  ls
+ 1226  cd algebras/
+ 1227  ls
+ 1228  ls *.tex
+ 1229  nano algebras.tex
+ 1230  ls
+ 1231  cd ..
+ 1232  ls
+ 1233  cd ..
+ 1234  ls
+ 1235  cd ..
+ 1236  cd src
+ 1237  ls
+ 1238  cd sage
+ 1239  ls
+ 1240  cd algebras/
+ 1241  ls
+ 1242  ls lie*
+ 1243  grep ?
+ 1244  grep -h
+ 1245  grep "sage:" examples.py
+ 1246  ls exampl*
+ 1247  ls
+ 1248  cd lie_
+ 1249  ls lie_*
+ 1250  cd lie_conformal_algebras/
+ 1251  ls
+ 1252  grep "sage:" examples.py 
+ 1253  nano examples.py 
+ 1254  cd ..
+ 1255  ls
+ 1256  ls lie_*
+ 1257  cd lie_algebras/
+ 1258  ls
+ 1259  grep -il "sage:" examples.py 
+ 1260  man grep
+ 1261  grep -i "sage:" examples.py 
+ 1262  grep -i "sage:" *.py
+ 1263  grep -i "sage:" *.py >exam.txt
+ 1264  nano exam.txt 
+ 1265  cp exam.txt ~
+ 1266  ls ~
+ 1267  ls ~exam
+ 1268  cp exam ~/
+ 1269  cp exam.txt ~/
+ 1270  ls ~
+ 1271  ls ~*.txt
+ 1272  cp exam.txt /home/steve
+ 1273  ls /home/steve/exam*
+ 1274  cd ..
+ 1275  cd ll
+ 1276  cd ..
+ 1277  ls
+ 1278  cd ..
+ 1279  ls
+ 1280  cd local/
+ 1281  ls
+ 1282  cd share
+ 1283  ls
+ 1284  cd ,,
+ 1285  cd ..
+ 1286  cd venv
+ 1287  cd share/texmf/tex/latex/sagetex
+ 1288  ls
+ 1289  cp /home/steve/exam.txt .
+ 1290  ls
+ 1291  rename exam.txt exam.tex
+ 1292  ren exam.txt exam.tex
+ 1293  mv exam.txt exam.tex
+ 1294  ip neigh
+ 1295  ip -6 
+ 1296  ip -6 address
+ 1297  ip -4 address
+ 1298  ping 10.0.0.89
+ 1299  ip neigh 10.0.0.88
+ 1300  ip neigh help
+ 1301  ip neigh ADDR 10.0.0.88
+ 1302  ip neigh show
+ 1303  ip neigh flush
+ 1304  ip neigh help
+ 1305  ip neigh get 10.0.0.88
+ 1306  ip neigh 
+ 1307  ssh steve@10.0.0.88
+ 1308  ping 10.0.0.88
+ 1309  exit
+ 1310  cd etc
+ 1311  cd /etc
+ 1312  cd network
+ 1313  cat interfaces
+ 1314  ls
+ 1315  cat interfaces.d
+ 1316  cd interfaces.d/
+ 1317  ls
+ 1318  cat eth0
+ 1319  raspi-config
+ 1320  sudo raspi-config
+ 1321  exit
+ 1322  sudo reboot now
+ 1323  ls 
+ 1324  ip -a
+ 1325  ip a
+ 1326  ping github.com
+ 1327  ip neigh
+ 1328  exit
+ 1329  ls
+ 1330  cd /mnt
+ 1331  ls
+ 1332  cd mydrive/
+ 1333  ls
+ 1334  cd shared
+ 1335  ls
+ 1336  which scp
+ 1337  scp -help
+ 1338  exit
+ 1339  ls lie.zip
+ 1340  ls lie
+ 1341  cd lie
+ 1342  ls
+ 1343  cd lie
+ 1344  ls
+ 1345  cd lie
+ 1346  ls
+ 1347  cp *.ipynb /home/steve/lie
+ 1348  cd 
+ 1349  cd lie
+ 1350  ls
+ 1351  exit
+ 1352  ip 
+ 1353  ip a
+ 1354  cd /etcc
+ 1355  cd /etc
+ 1356  ls hp*
+ 1357  ping 10.0.0.89
+ 1358  ping 10.0.0.107
+ 1359  ssh steve@10.0.0.89
+ 1360  ip neigh
+ 1361  ping 10.0.0.89
+ 1362  cd
+ 1363  ls
+ 1364  ls exam*
+ 1365  nano exam.txt
+ 1366  ls
+ 1367  cat test.txt
+ 1368  cat test.txtt
+ 1369  cat test.txt
+ 1370  cat test.tex
+ 1371  cp /home/steve/sage/sage/venv/share/texmf/tex//latex/sagetex/sagetex.sty
+ 1372  cp /home/steve/sage/sage/venv/share/texmf/tex//latex/sagetex/sagetex.sty .
+ 1373  ls
+ 1374  ls -la *.sage
+ 1375  sage test.sagetex.sage
+ 1376  cat test.sagetex.sage
+ 1377  nano test.sagetex.sage
+ 1378  sage test.sagetex.sage
+ 1379  cat test.sagetex.sage
+ 1380  sage test.sagetex.sage
+ 1381  ls test.*
+ 1382  test.pdf
+ 1383  sage test.sagetex.sage
+ 1384  cd sage/sage/venv/share/doc/
+ 1385  ls
+ 1386  cd sagetex/
+ 1387  dir
+ 1388  cd 
+ 1389  ls test.*
+ 1390  sage test.sagetex.sage
+ 1391  itop
+ 1392  htop
+ 1393  exit
+ 1394  ls test.sagetex.sage
+ 1395  sage test.sagetex.sage
+ 1396  cd 
+ 1397  ls
+ 1398  cd lie
+ 1399  sage -n jupyterlab
+ 1400  ip a
+ 1401  ping 10.0.0.103
+ 1402  ip a
+ 1403  neigh
+ 1404  ls -la
+ 1405  exit
+ 1406  history | grep "update"
+ 1407  sudo apt update
+ 1408  man apt
+ 1409  sudo apt upgrade
+ 1410  sudo reboot now
+ 1411  neofetch
+ 1412  sudo apt update && sudo apt full-upgrade
+ 1413  sudo apt-get update
+ 1414  sudo apt-get update --fix-missing
+ 1415  cd /etc/apt/
+ 1416  ls
+ 1417  sudo nano sources.list
+ 1418  sudo apt update
+ 1419  sudo apt list --upgradeable
+ 1420  sudo apt list --upgradeable -a
+ 1421  sudo apt full-upgrade
+ 1422  ping archive.raspberrypi.com
+ 1423  ping google.com
+ 1424  ping 8.8.8.8
+ 1425  ping google.com
+ 1426  history
+ 1427  ping archive.raspberrypi.com
+ 1428  sudo apt full-upgrade
+ 1429  history
+ 1430  sudo apt update && sudo apt full-upgrade
+ 1431  sudo apt --fix-broken install
+ 1432  df
+ 1433  sudo dpkg -i --force-overwrite /var/cache/apt/archives/package-name.deb
+ 1434  sudo apt clean
+ 1435  sudo apt update && sudo apt full-upgrade
+ 1436  sudo apt --fix-broken install
+ 1437  sudo dpkg -i --force-overwrite /var/cache/apt/archives/libgtk-3-0t64_3.24.49-3_arm64.deb
+ 1438  sudo apt --fix-broken install
+ 1439  sudo reboot now
+ 1440  ls
+ 1441  history
+ 1442  sudo apt update
+ 1443  sudo nano sources.list
+ 1444  cd etc
+ 1445  cd /etc
+ 1446  cd app
+ 1447  cd apt
+ 1448  ls
+ 1449  sudo nano sources.list
+ 1450  sudo apt update && sudo apt full-upgrade
+ 1451  sudo dpkg --configure -a
+ 1452  sudo apt --fix-broken install
+ 1453  sudo apt remove --purge wolfram-engine
+ 1454  sudo apt autoremove
+ 1455  sudo reboot now
+ 1456  sudo apt autoremove
+ 1457  sudo apt remove --purge wolfram-engine_14.3.0+202510021899_arm64.deb
+ 1458  cd var/cache/apt/archives
+ 1459  cd /var/cache/apt/archives
+ 1460  ls
+ 1461  sudo rm wolfram-engine_14.3.0+202510021899_arm64.deb 
+ 1462  sudo apt autoremove
+ 1463  sudo rm wolfram-engine_14.3.0+202510021899_arm64.deb 
+ 1464  cd /etc/apt
+ 1465  ls
+ 1466  sudo nano sources.list
+ 1467  sudo apt update && sudo apt full-upgrade
+ 1468  sudo apt uninstall wolfram-engine
+ 1469  sudo apt remove wolfram-engine
+ 1470  sudo apt install wolfram-engine
+ 1471  sudo apt purge wolfram-engine
+ 1472  sudo reboot now
+ 1473  sudo systemctl reboot -i
+ 1474  sudo apt purge wolfram-engine
+ 1475  sudo apt autoremove
+ 1476  sudo apt clean
+ 1477  sudo apt list --installed
+ 1478  sudo apt list --installed | grep "wolfram"
+ 1479  sudo apt-get remove "^wolfram-engine.*"
+ 1480  sudo apt-get --purge autoremove wolfram-engine
+ 1481  sudo apt-get purge --auto-remove wolfram-engine
+ 1482  mv /var/lib/dpkg/wolfram-engine.* /tmp/
+ 1483  cd /var/lib/dpkg
+ 1484  ls
+ 1485  cd lock
+ 1486  cat lock
+ 1487  sudo cat lock
+ 1488  ls -la
+ 1489  cd
+ 1490  dpkg --list
+ 1491  dpkg --list | grep "^rc"
+ 1492  dpkg --list | grep "^rc" | cut -d " " -f 3
+ 1493  dpkg --list | grep "^rc" | cut -d " " -f 3 | xargs sudo dpkg --dry-run --purge
+ 1494  dpkg --list | grep "^rc" | cut -d " " -f 3 | xargs sudo dpkg --purge
+ 1495  apt-get autoremove -y
+ 1496  sudo apt-get autoremove -y
+ 1497  apt-get autoremove -y; apt-get --dry-run purge -y $(dpkg --list |grep '^rc' |awk '{print $2}')
+ 1498  apt-get autoremove -y; apt-get  purge -y $(dpkg --list |grep '^rc' |awk '{print $2}')
+ 1499  sudo apt-get autoremove -y; sudo apt-get  purge -y $(dpkg --list |grep '^rc' |awk '{print $2}')
+ 1500  cd /var/lib/dpkg/info
+ 1501  ls
+ 1502  ls wolf*
+ 1503  sudo rm wolfram*
+ 1504  ls wolf*
+ 1505  cd 
+ 1506  df -h
+ 1507  sudo rm /var/lib/apt/lists/* -vf
+ 1508  sudo rm /var/lib/apt/archives/lock
+ 1509  sudo rm /var/lib/dpkg/lock
+ 1510  sudo apt update
+ 1511  sudo apt purge wolfram-engine
+ 1512  sudo apt-mark hold wolfram-engine
+ 1513  sudo dpkg -r --force-remove reinstreq wolfram-engine
+ 1514  sudo dpkg -r --force-remove-reinstreq wolfram-engine
+ 1515  cd /opt
+ 1516  ls
+ 1517  sudo rm Wolfram
+ 1518  sudo rm -rd Wolfram
+ 1519  sudo apt update && sudo apt full-upgrade
+ 1520  sudo dpkg -r --force-remove-reinstreq lxplug-batt
+ 1521  sudo dpkg -r --force-remove-reinstreq lxpanel
+ 1522  cd /etc/apt
+ 1523  ls
+ 1524  sudo nano sources.list
+ 1525  sudo apt update && sudo apt full-upgrade
+ 1526  sudo apt --fix-broken install
+ 1527  sudo reboot now
+ 1528  startx
+ 1529  raspi-config
+ 1530  sudo raspi-config
+ 1531  exit
+ 1532  sudo Xorg -configure
+ 1533  cd /etc
+ 1534  cd X11
+ 1535  ls
+ 1536  cat xorg.conf.d
+ 1537  cd xorg.conf.d/
+ 1538  ls
+ 1539  sudo mdm stop
+ 1540  sudo apt update
+ 1541  sudo apt upgrade -y
+ 1542  cd
+ 1543  sudo raspi-config
+ 1544  sudo apt --reinstall install raspberrypi-ui-mods
+ 1545  history
+ 1546  cd /etc/apt
+ 1547  ls
+ 1548  sudo nano sources.list
+ 1549  sudo apt update
+ 1550  sudo apt upgrade -y
+ 1551  sudo Xorg -configure
+ 1552  sudo reboot now
+ 1553  xstart
+ 1554  exit
+ 1555  sudo Xorg -config
+ 1556  sudo Xorg 
+ 1557  cd /tmp
+ 1558  ls
+ 1559  sudo .X0-lock
+ 1560  sudo rm  .X0-lock
+ 1561  exit
+ 1562  exit
+ 1563  sudo reboot now
+ 1564  exit
+ 1565  sudo raspi-config
+ 1566  cd etc
+ 1567  cd /etc
+ 1568  ls
+ 1569  sudo nano lightdm.conf
+ 1570  sudo update-alternatives --congig x-session-manager
+ 1571  sudo update-alternatives --config x-session-manager
+ 1572  sudo reboot now
+ 1573  sudo raspi-config
+ 1574  sudo apt-get install lxde
+ 1575  sudo leafpad /etc/lightdm/lightdm.conf
+ 1576  sudo nano  /etc/lightdm/lightdm.conf
+ 1577  sudo reboot -r 
+ 1578  sudo reboot now
+ 1579  exit
+ 1580  neofetch
+ 1581  sudo apt-get install wolfram-engine
+ 1582  sudo apt-get install mathematica
+ 1583  exit
+ 1584  sudo apt-get install sagemath
+ 1585  sudo apt-get search sagemath
+ 1586  sudo apt-get install sage
+ 1587  sudo apt update
+ 1588  cd etc/apt
+ 1589  cd /etc
+ 1590  cd apt
+ 1591  dir
+ 1592  sudo nano sources.list
+ 1593  sudo apt install sagemath
+ 1594  cd 
+ 1595  curl -L -O "https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-$(uname)-$(uname -m).sh"
+ 1596  bash Miniforge3-$(uname)-$(uname -m).sh
+ 1597  ping google.com
+ 1598  sudo apt install build-essential, autoconf
+ 1599  git clone https://github.com/sagemath/sage.git
+ 1600  cd sage
+ 1601  dir
+ 1602  ls
+ 1603  sage
+ 1604  cd sage
+ 1605  ls
+ 1606  sage
+ 1607  ls
+ 1608  ls sage.git
+ 1609  cd ..
+ 1610  ls sage.git
+ 1611  cd ..
+ 1612  ls sage.git
+ 1613  cd sage
+ 1614  ls
+ 1615  cp *.ipynb /tmp
+ 1616  cd ..
+ 1617  rm -rd sage
+ 1618  git clone https://github.com/sagemath/sage.git
+ 1619  sudo apt install mamba
+ 1620  sudo apt install conda
+ 1621  sudo pip3 install meson
+ 1622  sudo apt install python3-meson
+ 1623  sudo pipx install meson
+ 1624  sudo pip install pipx
+ 1625  sudo apt-get install pipx
+ 1626  sudo pipx install meson
+ 1627  meson
+ 1628  meson setup builddir --prefix=$PWD/build-install
+ 1629  sudo apt-get install bc binutils bzip2 ca-certificates cliquer cmake curl         ecl eclib-tools fflas-ffpack flex g++ gap gcc gengetopt gfan gfortran         glpk-utils gmp-ecm lcalc libatomic-ops-dev libboost-dev         libbraiding-dev libbrial-dev libbrial-groebner-dev libbz2-dev         libcdd-dev libcdd-tools libcliquer-dev libcurl4-openssl-dev libec-dev         libecm-dev libffi-dev libflint-dev libfplll-dev libfreetype-dev         libgap-dev libgc-dev libgd-dev libgf2x-dev libgivaro-dev libglpk-dev         libgmp-dev libgsl-dev libhomfly-dev libiml-dev liblfunction-dev         liblinbox-dev liblrcalc-dev liblzma-dev libm4ri-dev libm4rie-dev         libmpc-dev libmpfi-dev libmpfr-dev libncurses5-dev libntl-dev         libopenblas-dev libpari-dev libplanarity-dev libppl-dev         libprimecount-dev libprimesieve-dev libpython3-dev libqhull-dev         libreadline-dev librw-dev libsingular4-dev libsqlite3-dev libssl-dev         libsuitesparse-dev libsymmetrica2-dev libz-dev libzmq3-dev m4 make         maxima maxima-sage meson nauty ninja-build openssl palp pari-doc         pari-elldata pari-galdata pari-galpol pari-gp2c pari-seadata patch         patchelf perl pkg-config planarity ppl-dev python3 python3-setuptools         python3-venv qhull-bin singular singular-doc sqlite3 sympow tachyon         tar texinfo tox xz-utils
+ 1630  sudo apt-get install autoconf automake gh git gpgconf libtool         openssh-client pkg-config
+ 1631  sudo apt-get install default-jdk dvipng ffmpeg fonts-freefont-otf         imagemagick latexmk libavdevice-dev libjpeg-dev pandoc tex-gyre         texlive-fonts-recommended texlive-lang-cyrillic texlive-lang-english         texlive-lang-european texlive-lang-french texlive-lang-german         texlive-lang-italian texlive-lang-japanese texlive-lang-polish         texlive-lang-portuguese texlive-lang-spanish texlive-latex-extra         texlive-luatex texlive-xetex xindy
+ 1632  sudo apt-get install 4ti2 clang coinor-cbc coinor-libcbc-dev fricas         graphviz libfile-slurp-perl libgiac-dev libgraphviz-dev libigraph-dev         libisl-dev libjson-perl libmongodb-perl libnauty-dev libperl-dev         libpolymake-dev libsvg-perl libtbb-dev libterm-readkey-perl         libterm-readline-gnu-perl libxml-libxslt-perl libxml-writer-perl         libxml2-dev lrslib pari-gp2c pdf2svg polymake sbcl xcas
+ 1633  sudo apt-get install python3-tk
+ 1634  sudo apt-get install tk tk-dev
+ 1635  cd /etc/resolvconf/
+ 1636  ls
+ 1637  ls -la
+ 1638  cd ..
+ 1639  ls -la
+ 1640  cd /etc
+ 1641  ls
+ 1642  ls dhcp*
+ 1643  sudo nano dhcpcd.conf 
+ 1644  sudo systemctl restart dhcpcd.service
+ 1645  sudo systemctl daemon-reload
+ 1646  sudo systemctl restart dhcpcd.service
+ 1647  sudo dhcpcd
+ 1648  sudo nano dhcpcd.conf 
+ 1649  cat dhcpcd.conf
+ 1650  sudo nano dhcpcd.conf 
+ 1651  sudo systemctl restart dhcpcd
+ 1652  dig
+ 1653  ping google.com
+ 1654  ping 8.8.8.8
+ 1655  cd ..
+ 1656  dhcpcd
+ 1657  sudo apt-get install dhcpcd
+ 1658  sudo systemctl restart dhcpcd
+ 1659  ping 8.8.8.8
+ 1660  sudo apt-get install dhcpcd
+ 1661  sudo apt-get install --reinstall dhcpcd
+ 1662  cd etc
+ 1663  dir
+ 1664  ls -la d*
+ 1665  sudo nano dnsmasq.conf
+ 1666  sudo nano dnsmasq.d
+ 1667  sudo cp /etc/dnsmasq.conf ~/dnsmasq.conf.backup
+ 1668  sudo nano dnsmasq.conf
+ 1669  dnsmasq --test
+ 1670  sudo systemctl enable dnsmasq
+ 1671  ping 8.8.8.8
+ 1672  cd 
+ 1673  ip a
+ 1674  sudo systemctl restart networking
+ 1675  nslookup google.com
+ 1676  sudo reboot now
+ 1677  sudo systemctl stop dhcpcd
+ 1678  sudo systemctl stop networking
+ 1679  ip a
+ 1680  cd etc
+ 1681  cd /etc
+ 1682  cat dhcpcd.conf
+ 1683  ip a
+ 1684  sudo service networking restart
+ 1685  sudo service dhcpcd restart
+ 1686  ifconfig
+ 1687  sudo ip link eth0
+ 1688  sudo ip link end0
+ 1689  ip link help
+ 1690  sudo ip link set end0 up
+ 1691  ifconfig show
+ 1692  ifconfig
+ 1693  ping 8.8.8.8
+ 1694  ping google.com
+ 1695  sudo systemctl restart dhcpcd
+ 1696  ipconfig
+ 1697  ifconfig
+ 1698  ping google.com
+ 1699  ping 8.8.8.8
+ 1700  exit
+ 1701  cd sage
+ 1702  ls
+ 1703  ./sage
+ 1704  ./sage --optional
+ 1705  ping 8.8.8.8
+ 1706  history
+ 1707  sudo ip link set end0 up
+ 1708  ping 8.8.8.8
+ 1709  sudo systemctl restart dhcpcd
+ 1710  sudo ip link set end0 up
+ 1711  ip a
+ 1712  ping 8.8.8.8
+ 1713  ping google.com
+ 1714  ifconfig
+ 1715  ifconfig show
+ 1716  ip link help
+ 1717  sudo ip link end0
+ 1718  sudo ip link set end0 up
+ 1719  ip a
+ 1720  ping google.com
+ 1721  history
+ 1722  sudo service networking restart
+ 1723  sudo service dhcpcd restart
+ 1724  ping google.com
+ 1725  ping 8.8.8.8
+ 1726  sudo ip link set end0 up
+ 1727  sudo systemctl restart dhcpcd
+ 1728  sudo systemctl status dhcpcd
+ 1729  ping google.com
+ 1730  ping 10.0.0.103
+ 1731  cd etc
+ 1732  cd /etc
+ 1733  ls
+ 1734  sudo nano dhcpcd.conf
+ 1735  sudo systemctl stop dhcpcd
+ 1736  ip a
+ 1737  ping google.com
+ 1738  sudo systemctl stop dhcpcd
+ 1739  sudo systemctl restart dhcpcd
+ 1740  sudo systemctl status dhcpcd
+ 1741  cd /etc
+ 1742  sudo nano dhcpcd.conf
+ 1743  sudo systemctl restart dhcpcd
+ 1744  sudo systemctl status dhcpcd
+ 1745  cd 
+ 1746  cat /etc/resolv.conf
+ 1747  sudo reboot now
+ 1748  ping 8.8.8.8
+ 1749  ping google.com
+ 1750  sudo ip route
+ 1751  sudo ip route show
+ 1752  ip route add default via 10.0.0.165 dev end0
+ 1753  sudo ip route add default via 10.0.0.165 dev end0
+ 1754  sudo ip route show
+ 1755  ping 8.8.8.8
+ 1756  ping google.com
+ 1757  sudo ip route add default via 10.0.0.155 dev end0
+ 1758  sudo ip route show
+ 1759  ping google.com
+ 1760  cat /etc/resolv.conf
+ 1761  sudo ip route add default via 8.8.8.8 8.8.4.4 dev end0
+ 1762  sudo ip route add default via 8.8.8.8 dev end0
+ 1763  ip a
+ 1764  sudo ip route add default via 10.0.0.107 dev end0
+ 1765  cat /etc/network/interfaces
+ 1766  sudo raspi-config
+ 1767  hostname -I
+ 1768  gateway
+ 1769  route | grep default
+ 1770  ip route | grep default
+ 1771  sudo ip route add default via 10.0.0.166 dev end0
+ 1772  sudo nano /etc/network/interfaces
+ 1773  cd /etc/network/interfaces.d/
+ 1774  dir
+ 1775  cat eth0
+ 1776  cp eth0 end0
+ 1777  sudo cp eth0 end0
+ 1778  sudo rm eth0
+ 1779  sudo nano end0 
+ 1780  sudo systemctl restart networking
+ 1781  ip route list default
+ 1782  sudo ip route default via 10.0.0.166 dev end0
+ 1783  sudo ip route add default via 10.0.0.166 dev end0
+ 1784  sudo systemctl stop networking
+ 1785  sudo service network stop
+ 1786  sudo ip route list default
+ 1787  sudo system restart networking
+ 1788  sudo systemctl restart networking
+ 1789  sudo ip route list default
+ 1790  route -n
+ 1791  ip route show
+ 1792  cd 
+ 1793  sudo /etc/init.d/networking restart
+ 1794  ip route show
+ 1795  sudo reboot now
+ 1796  ip route show
+ 1797  sudo systemctl restart networking
+ 1798  ip route show
+ 1799  ip route list default
+ 1800  sudo ip route add default via 10.0.0.166 dev end0
+ 1801  ip route show
+ 1802  ping 8.8.8.8
+ 1803  ping google.com
+ 1804  sudo reboot now
+ 1805  ping 8.8.8.8
+ 1806  sudo ip route add default via 10.0.0.166 dev end0
+ 1807  ping 8.8.8.8
+ 1808  sudo rasp-config
+ 1809  sudo raspi-config
+ 1810  sudo ip route add default via 10.0.0.166 dev end0
+ 1811  sudo ip route
+ 1812  sudo reboot now
+ 1813  ping 8.8.8.8
+ 1814  ip route
+ 1815  ls *.ipy*
+ 1816  sage -n jupyterlab
+ 1817  ping 8.8.8.8
+ 1818  ip route
+ 1819  sudo ip route add default via 10.0.0.166 dev end0
+ 1820  ip route
+ 1821  sudo ip route add default via 10.0.0.166 dev end0
+ 1822  ip route
+ 1823  sudo ip route add default via 10.0.0.166 dev end0
+ 1824  ip route
+ 1825  sudo ip route add default via 10.0.0.166 dev end0
+ 1826  ping 8.8.8.8
+ 1827  ip route
+ 1828  ping 8.8.8.8
+ 1829  ip route
+ 1830  sudo ip route
+ 1831  sudo ip route add default via 10.0.0.166 dev end0
+ 1832  ping 8.8.8.8
+ 1833  ping 10.0.0.103
+ 1834  logoff
+ 1835  logout
+ 1836  sudo ip route add default via 10.0.0.166 dev end0
+ 1837  sudo ip route
+ 1838  [200~  $ sudo apt-get install bc binutils bzip2 ca-certificates cliquer cmake curl         ecl eclib-tools fflas-ffpack flex g++ gap gcc gengetopt gfan gfortran         glpk-utils gmp-ecm lcalc libatomic-ops-dev libboost-dev         libbraiding-dev libbrial-dev libbrial-groebner-dev libbz2-dev         libcdd-dev libcdd-tools libcliquer-dev libcurl4-openssl-dev libec-dev         libecm-dev libffi-dev libflint-dev libfplll-dev libfreetype-dev         libgap-dev libgc-dev libgd-dev libgf2x-dev libgivaro-dev libglpk-dev         libgmp-dev libgsl-dev libhomfly-dev libiml-dev liblfunction-dev         liblinbox-dev liblrcalc-dev liblzma-dev libm4ri-dev libm4rie-dev         libmpc-dev libmpfi-dev libmpfr-dev libncurses5-dev libntl-dev         libopenblas-dev libpari-dev libplanarity-dev libppl-dev         libprimecount-dev libprimesieve-dev libpython3-dev libqhull-dev         libreadline-dev librw-dev libsingular4-dev libsqlite3-dev libssl-dev         libsuitesparse-dev libsymmetrica2-dev libz-dev libzmq3-dev m4 make         maxima maxima-sage meson nauty ninja-build openssl palp pari-doc         pari-elldata pari-galdata pari-galpol pari-gp2c pari-seadata patch         patchelf perl pkg-config planarity ppl-dev python3 python3-setuptools         python3-venv qhull-bin singular singular-doc sqlite3 sympow tachyon         tar texinfo tox xz-utils
+ 1839  sudo apt-get install bc binutils bzip2 ca-certificates cliquer cmake curl         ecl eclib-tools fflas-ffpack flex g++ gap gcc gengetopt gfan gfortran         glpk-utils gmp-ecm lcalc libatomic-ops-dev libboost-dev         libbraiding-dev libbrial-dev libbrial-groebner-dev libbz2-dev         libcdd-dev libcdd-tools libcliquer-dev libcurl4-openssl-dev libec-dev         libecm-dev libffi-dev libflint-dev libfplll-dev libfreetype-dev         libgap-dev libgc-dev libgd-dev libgf2x-dev libgivaro-dev libglpk-dev         libgmp-dev libgsl-dev libhomfly-dev libiml-dev liblfunction-dev         liblinbox-dev liblrcalc-dev liblzma-dev libm4ri-dev libm4rie-dev         libmpc-dev libmpfi-dev libmpfr-dev libncurses5-dev libntl-dev         libopenblas-dev libpari-dev libplanarity-dev libppl-dev         libprimecount-dev libprimesieve-dev libpython3-dev libqhull-dev         libreadline-dev librw-dev libsingular4-dev libsqlite3-dev libssl-dev         libsuitesparse-dev libsymmetrica2-dev libz-dev libzmq3-dev m4 make         maxima maxima-sage meson nauty ninja-build openssl palp pari-doc         pari-elldata pari-galdata pari-galpol pari-gp2c pari-seadata patch         patchelf perl pkg-config planarity ppl-dev python3 python3-setuptools         python3-venv qhull-bin singular singular-doc sqlite3 sympow tachyon         tar texinfo tox xz-utils
+ 1840  sudo apt-get install autoconf automake gh git gpgconf libtool         openssh-client pkg-config
+ 1841  sudo apt-get install default-jdk dvipng ffmpeg fonts-freefont-otf         imagemagick latexmk libavdevice-dev libjpeg-dev pandoc tex-gyre         texlive-fonts-recommended texlive-lang-cyrillic texlive-lang-english         texlive-lang-european texlive-lang-french texlive-lang-german         texlive-lang-italian texlive-lang-japanese texlive-lang-polish         texlive-lang-portuguese texlive-lang-spanish texlive-latex-extra         texlive-luatex texlive-xetex xindy
+ 1842  sudo apt-get install 4ti2 clang coinor-cbc coinor-libcbc-dev fricas         graphviz libfile-slurp-perl libgiac-dev libgraphviz-dev libigraph-dev         libisl-dev libjson-perl libmongodb-perl libnauty-dev libperl-dev         libpolymake-dev libsvg-perl libtbb-dev libterm-readkey-perl         libterm-readline-gnu-perl libxml-libxslt-perl libxml-writer-perl         libxml2-dev lrslib pari-gp2c pdf2svg polymake sbcl xcas
+ 1843  echo SAGE_ROOT
+ 1844  echo $SAGE_ROOT
+ 1845  cd sage
+ 1846  ls
+ 1847  cd sage
+ 1848  ls
+ 1849  ./sage
+ 1850  history | grep "git"
+ 1851  cd ..
+ 1852  git clone https://github.com/sagemath/sage.git
+ 1853  cd ..
+ 1854  mkdir sage10.8
+ 1855  cd sage10.8
+ 1856  git clone https://github.com/sagemath/sage.git
+ 1857  ls
+ 1858  cd sage
+ 1859  ls
+ 1860  cat README.md
+ 1861  make configure
+ 1862  cat README.md | grep "make"
+ 1863  make
+ 1864  ./configure
+ 1865  sudo apt-get update
+ 1866  sudo apt-get install libbrial-dev libbrial-groebner-dev libec-dev eclib-tools fflas-ffpack libfplll-dev libgivaro-dev texinfo libbraiding-dev liblinbox-dev liblrcalc-dev libm4ri-dev libm4rie-dev maxima-sage maxima libplanarity-dev planarity singular singular-doc libsingular4-dev
+ 1867  sudo apt-get install 4ti2 gpgconf openssh-client default-jdk libavdevice-dev fricas polymake libpolymake-dev 
+ 1868  make
+ 1869  ./sage
+ 1870  cd ..
+ 1871  ls
+ 1872  rd -rm sage
+ 1873  rmdir -rm sage
+ 1874  rmdir --help
+ 1875  rm sage
+ 1876  rmdir sage
+ 1877  rm --help
+ 1878  rm -r sage
+ 1879  ls
+ 1880  git master https://github.com/sagemath/sage.git
+ 1881  git --help
+ 1882  git clone branch master https://github.com/sagemath/sage.git
+ 1883  cd rm sage10.8
+ 1884  cd 
+ 1885  rm sage10.8
+ 1886  rmdir sage10.8
+ 1887  mkdir -p ~/sage10.8
+ 1888  cd sage10.8
+ 1889  [200~git clone -c core.symlinks=true --filter blob:none                --origin upstream --branch develop --tags               https://github.com/sagemath/sage.git
+ 1890  git clone -c core.symlinks=true --filter blob:none                --origin upstream --branch master --tags               https://github.com/sagemath/sage.git
+ 1891  cd sage
+ 1892  dir
+ 1893  make configure
+ 1894  ./configure
+ 1895  sudo apt-get install libbrial-dev libbrial-groebner-dev libec-dev eclib-tools fflas-ffpack libfplll-dev libgivaro-dev texinfo libbraiding-dev liblinbox-dev liblrcalc-dev libm4ri-dev libm4rie-dev maxima-sage maxima libplanarity-dev planarity singular singular-doc libsingular4-dev
+ 1896  sudo apt-get install 4ti2 gpgconf openssh-client default-jdk libavdevice-dev fricas polymake libpolymake-dev 
+ 1897  make 
+ 1898  ./sage
+ 1899  ./sage -n jupyterlab
+ 1900  make ptestlong
+ 1901  ./sage --optional
+ 1902  ./sage -i xindy
+ 1903  ./sage --optional
+ 1904  ./sage -i texlive
+ 1905  ./sage --optional
+ 1906  ./sage -i texlive_luatex texttable singular_jupyter sagemath_categories sagemath_giac sqlalchemy
+ 1907  ./sage -i texttable singular_jupyter sagemath_categories sagemath_giac sqlalchemy
+ 1908  ./sage -i texttable singular_jupyter sagemath_giac sqlalchemy
+ 1909  ./sage -n jupyterlab
+ 1910  ./sage10.8/sage/sage -n jupyterlab
+ 1911  cd 
+ 1912  ./sage10.8/sage/sage -n jupyterlab
+ 1913  cd test
+ 1914  ls
+ 1915  ~./sage10.8/sage/sage -n jupyterlab
+ 1916  ~/sage10.8/sage/sage -n jupyterlab
+ 1917  ~./sage10.8/sage/sage -n jupyterlab
+ 1918  .~/sage10.8/sage/sage -n jupyterlab
+ 1919  path
+ 1920  ./home/steve/sage10.8/sage/sage -n jupyterlab
+ 1921  cd 
+ 1922  ./home/steve/sage10.8/sage/sage -n jupyterlab
+ 1923  .~/sage10.8/sage/sage -n jupyterlab
+ 1924  ~./sage10.8/sage/sage -n jupyterlab
+ 1925  ./sage10.8/sage/sage -n jupyterlab
+ 1926  cd test
+ 1927  history 
+ 1928  history | grep "drop"
+ 1929  history | grep "clone"
+ 1930  history
+ 1931  history | grep "test"
+ 1932  history | grep "rclone"
+ 1933  rclone --help
+ 1934  cd 
+ 1935  cd /mnt/dropbox
+ 1936  cd /mnt
+ 1937  ls
+ 1938  cd mydrive
+ 1939  ls
+ 1940  cd shared
+ 1941  ls
+ 1942  cd ..
+ 1943  cd steve
+ 1944  ls
+ 1945  history | grep "rclone"
+ 1946  exit
+ 1947  cd test
+ 1948  sage -n jupyterlab
+ 1949  history | grep "rclone"
+ 1950  exit
+ 1951  history
+ 1952  which rclone
+ 1953  rclone mount dropbox:/SageTex/Sage/mod/test /mnt/steve --allow-other
+ 1954  rclone sync dropbox:/SageTex/Sage/mod/test /home/steve/test
+ 1955  rclone --help
+ 1956  rclone config file
+ 1957  cd .config/
+ 1958  cd rclone/
+ 1959  ls
+ 1960  cat rclone.conf
+ 1961  cd /mnt
+ 1962  ls
+ 1963  cd mydrivve
+ 1964  cd mydrive
+ 1965  ls
+ 1966  cd shared
+ 1967  ls
+ 1968  cd 
+ 1969  rclone authorize "dropbox"
+ 1970  cd .config
+ 1971  cd rclone/
+ 1972  dir
+ 1973  nano rclone.conf 
+ 1974  rclone ls dropbox:
+ 1975  nano rclone.conf 
+ 1976  rclone ls dropbox:
+ 1977  rclone
+ 1978  rclone dropbox:
+ 1979  rclone dropbox
+ 1980  cd 
+ 1981  rclone config
+ 1982  rclone lsd remote:
+ 1983  rclone lsd dropbox:
+ 1984  rclone ls remote:
+ 1985  rclone ls dropbox:
+ 1986  rclone sync dropbox:/SageTex/Sage/mod/test /home/steve/tetest 
+ 1987  rclone sync dropbox:/SageTex/Sage/mod/test /home/steve/tetest -P
+ 1988  rclone sync dr/home/steve/test dropbox:/SageTex/Sage/mod/test -P --transfers 4
+ 1989  rclone sync /home/steve/test dropbox:/SageTex/Sage/mod/test -P --transfers 4
+ 1990  history
+ 1991  nano ~/.bashrc
+ 1992  shopt -s histappend
+ 1993  history
+ 1994  source ~/.bashrc
+ 1995  history -a
+ 1996  ping 8.8.8.8
+ 1997  sudo ip route add default via 10.0.0.166 dev end0
+ 1998  ping 8.8.8.8
+ 1999  exit
+ 2000  ls
+ 2001  cd ..
+ 2002  ls
+ 2003  cd ..
+ 2004  ls
+ 2005  cd gvfs
+ 2006  ls
+ 2007  exit
+ 2008  dir
+ 2009  ls
+ 2010  cd ..
+ 2011  ls
+ 2012  rm /rf 100*
+ 2013  rm -rf 100*
+ 2014  exit
+ 2015  history | grep "jupyter"
+ 2016  ./sage10.8/sage/sage -n jupyterlab
+ 2017  exit
+ 2018  ls -la *.db
+ 2019  ./sage10.8/sage/sage 
+ 2020  cd test
+ 2021  dir
+ 2022  ls -la *.db
+ 2023  df
+ 2024  ls -la *.db
+ 2025  rm hyperellipticGF*.db
+ 2026  ls -la *.db
+ 2027  df
+ 2028  ls -la *.db
+ 2029  rm hyperellipticGF*.db
+ 2030  ls -la *.db
+ 2031  rm hyperellipticGF8.db
+ 2032  ls -la *.db
+ 2033  ping 8.8.8.8
+ 2034  history | grep "dropbox"
+ 2035  cd share
+ 2036  rclone sync /home/steve/test dropbox:/SageTex/Sage/mod/test -P --transfers 4
+ 2037  ./sage10.8/sage/sage 
+ 2038  cd 
+ 2039  ./sage10.8/sage/sage 
+ 2040  ls *.db
+ 2041  ls -la *.db
+ 2042  history | grep "jupyterlab"
+ 2043  ./sage10.8/sage/sage -n jupyterlab
+ 2044  ls -la *.db
+ 2045  cp *.db test
+ 2046  cd test
+ 2047  ls -la *.db
+ 2048  cd ..
+ 2049  history | grep "jupyterlab"
+ 2050  ./sage10.8/sage/sage -n jupyterlab
+ 2051  htop
+ 2052  history | grep "jupyterlab"
+ 2053  ./sage10.8/sage/sage -n jupyterlab
+ 2054  exit
+ 2055  ls -la *.db
+ 2056  ping 8.8.8.8
+ 2057  history | grep "dropbox"
+ 2058  rclone sync /home/steve/test dropbox:/SageTex/Sage/mod/test -P --transfers 4
+ 2059  sudo reboot now
+ 2060  ls -la *.db
+ 2061  history | grep "dropbox"
+ 2062  rclone sync /home/steve/test dropbox:/SageTex/Sage/mod/test -P --transfers 4
+ 2063  ping 8.8.8.8
+ 2064  history | grep "ip route"
+ 2065  sudo ip route add default via 10.0.0.166 dev end0
+ 2066  rclone sync /home/steve/test dropbox:/SageTex/Sage/mod/test -P --transfers 4
+ 2067  history test/mypihistory
+ 2068  history >test/mypihistory

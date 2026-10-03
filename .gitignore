@@ -1,0 +1,21 @@
+Plaintext
+
+# LaTeX Compilation Trash
+*.aux
+*.log
+*.out
+*.toc
+*.pdf
+*.synctex.gz
+*.ipynb
+*.dvi
+*.xlsx
+*.ods
+# Massive Data Files (Keep these local or on Zenodo)
+*.db
+*.csv
+*.log
+*.sage
+*.txt
+# OS hidden files
+.DS_Store
